@@ -1,8 +1,9 @@
 // inventory.dart
 import 'package:flutter/material.dart';
 
-import 'inventory_aset.dart';  // pastikan ada class InventoryAsetPage di sini
-import 'inventory_bahan.dart'; // pastikan ada class InventoryBahanPage di sini
+import 'inventory_aset.dart';      // pastikan file ini ada
+import 'inventory_bahan.dart';     // pastikan file ini ada
+import 'inventory_product.dart';   // pastikan file ini ada dan memiliki class InventoryProductPage
 
 class InventoryPage extends StatefulWidget {
   const InventoryPage({super.key});
@@ -40,6 +41,17 @@ class _InventoryPageState extends State<InventoryPage> {
           Navigator.push(
             context,
             MaterialPageRoute(builder: (_) => const InventoryAsetPage()),
+          );
+        },
+      ),
+      _InventoryCard(
+        title: 'Inventory Produk',
+        subtitle: 'Kelola produk di Gerobak A & Gerobak B',
+        icon: Icons.shopping_basket_rounded,
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (_) => const InventoryProductPage()),
           );
         },
       ),

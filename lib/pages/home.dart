@@ -1,3 +1,5 @@
+import 'package:apps_break/pages/list_form_pKeluar.dart';
+import 'package:apps_break/pages/list_form_pMasuk.dart';
 import 'package:apps_break/pages/list_form_subbahan.dart' show ListFormSubBahanPage;
 import 'package:flutter/material.dart';
 
@@ -27,62 +29,79 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     final options = <_HomeOption>[
-      // 1) Pengajuan Bahan Baku (paling atas)
+      // 1) Pengajuan Bahan Baku
       _HomeOption(
         title: 'Pengajuan Bahan Baku',
         subtitle: 'Buat & kelola permintaan bahan baku',
         icon: Icons.assignment_turned_in_rounded,
         onTap: () {
-          Navigator.push(
-            context,
+          Navigator.push(context,
             MaterialPageRoute(builder: (_) => const ListFormSubBahanPage()),
           );
         },
       ),
-      // 2) Pengajuan Aset
-      _HomeOption(
-        title: 'Pengajuan Aset',
-        subtitle: 'Permintaan pembelian/penambahan aset',
-        icon: Icons.business_center_rounded,
-        onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (_) => const ListFormAsetPage()),
-          );
-        },
-      ),
-      // 3) Maintenance
-      _HomeOption(
-        title: 'Maintenance',
-        subtitle: 'Perawatan & servis peralatan',
-        icon: Icons.build_rounded,
-        onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (_) => const ListFormMaintenancePage()),
-          );
-        },
-      ),
-      // 4) Pengajuan Pemakaian Bahan Baku (Produksi)
+      // 2) Pengajuan Pemakaian Bahan Baku
       _HomeOption(
         title: 'Pengajuan Pemakaian Bahan Baku',
         subtitle: 'Catat pemakaian bahan untuk produksi',
         icon: Icons.receipt_long_rounded,
         onTap: () {
-          Navigator.push(
-            context,
+          Navigator.push(context,
             MaterialPageRoute(builder: (_) => const ListFormPemakaiBahanPage()),
           );
         },
       ),
-      // 5) Inventori
+      // 3) Pengajuan Aset / Pembelian Aset
+      _HomeOption(
+        title: 'Pengajuan Aset / Pembelian Aset',
+        subtitle: 'Permintaan pembelian/penambahan aset',
+        icon: Icons.business_center_rounded,
+        onTap: () {
+          Navigator.push(context,
+            MaterialPageRoute(builder: (_) => const ListFormAsetPage()),
+          );
+        },
+      ),
+      // 4) Pengajuan Maintenance
+      _HomeOption(
+        title: 'Pengajuan Maintenance',
+        subtitle: 'Perawatan & servis peralatan',
+        icon: Icons.build_rounded,
+        onTap: () {
+          Navigator.push(context,
+            MaterialPageRoute(builder: (_) => const ListFormMaintenancePage()),
+          );
+        },
+      ),
+      // 5) Pengajuan Masuk Produk (BARU)
+      _HomeOption(
+        title: 'Pengajuan Masuk Produk',
+        subtitle: 'Penerimaan/penambahan stok produk',
+        icon: Icons.move_to_inbox_rounded,
+        onTap: () {
+          Navigator.push(context,
+            MaterialPageRoute(builder: (_) => const ListFormProdukMasukPage()),
+          );
+        },
+      ),
+      // 6) Pengajuan Keluar Produk (BARU)
+      _HomeOption(
+        title: 'Pengajuan Keluar Produk',
+        subtitle: 'Pengeluaran/transfer/penjualan produk',
+        icon: Icons.outbox_rounded,
+        onTap: () {
+          Navigator.push(context,
+            MaterialPageRoute(builder: (_) => const ListFormProdukKeluarPage()),
+          );
+        },
+      ),
+      // 7) Inventori
       _HomeOption(
         title: 'Inventori',
         subtitle: 'Stok bahan & aset',
         icon: Icons.inventory_2_rounded,
         onTap: () {
-          Navigator.push(
-            context,
+          Navigator.push(context,
             MaterialPageRoute(builder: (_) => const InventoryPage()),
           );
         },
@@ -165,18 +184,9 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: kBg,
         indicatorColor: kPrimary.withOpacity(0.12),
         destinations: const [
-          NavigationDestination(
-            icon: Icon(Icons.arrow_back_rounded),
-            label: 'Back',
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.home_rounded),
-            label: 'Home',
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.person_rounded),
-            label: 'Profile',
-          ),
+          NavigationDestination(icon: Icon(Icons.arrow_back_rounded), label: 'Back'),
+          NavigationDestination(icon: Icon(Icons.home_rounded), label: 'Home'),
+          NavigationDestination(icon: Icon(Icons.person_rounded), label: 'Profile'),
         ],
       ),
     );
@@ -240,20 +250,14 @@ class _HomeOptionCard extends StatelessWidget {
                         title,
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: const TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.w800,
-                        ),
+                        style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
                       ),
                       const SizedBox(height: 6),
                       Text(
                         subtitle,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
-                        style: const TextStyle(
-                          fontSize: 13,
-                          color: Color(0xFF616161),
-                        ),
+                        style: const TextStyle(fontSize: 13, color: Color(0xFF616161)),
                       ),
                     ],
                   ),
