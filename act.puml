@@ -1,0 +1,96 @@
+@startuml
+title Activity Diagram Sistem Manajemen Inventori Break.co (Terintegrasi)
+
+|Unit Produksi|
+start
+:Login Sistem;
+:Cek stok bahan baku;
+
+if (Stok mencukupi?) then (Ya)
+:Ambil bahan baku (FEFO);
+else (Tidak)
+:Ajukan pembelian bahan baku;
+
+|Manager|
+:Terima pengajuan pembelian;
+:Cek stok bahan baku;
+
+if (Pengajuan valid?) then (Ya)
+    :Setujui pembelian;
+    :Update stok bahan baku;
+else (Tidak)
+    :Tolak pengajuan;
+    stop
+endif
+
+|Unit Produksi|
+:Ambil bahan baku (FEFO);
+endif
+
+:Proses produksi minuman;
+:Beri label produk & tanggal kedaluwarsa;
+:Simpan produk ke lemari pendingin;
+:Input laporan produksi;
+
+|Manager|
+:Verifikasi laporan produksi;
+
+if (Laporan valid?) then (Ya)
+:Setujui laporan produksi;
+else (Tidak)
+:Kembalikan laporan;
+stop
+endif
+
+|Runner|
+:Login Sistem;
+:Ambil produk dari lemari pendingin;
+:Input laporan berangkat;
+
+|Manager|
+:Verifikasi laporan berangkat;
+
+if (Laporan berangkat valid?) then (Ya)
+:Setujui laporan berangkat;
+:Update stok gerobak (stok keluar);
+else (Tidak)
+:Kembalikan laporan;
+stop
+endif
+
+|Runner|
+:Melakukan penjualan;
+:Input laporan pulang;
+
+|Manager|
+:Verifikasi laporan pulang;
+
+if (Laporan pulang valid?) then (Ya)
+:Setujui laporan pulang;
+:Update stok gerobak (stok masuk);
+else (Tidak)
+:Kembalikan laporan;
+stop
+endif
+
+|Runner|
+:Simpan produk sisa ke lemari pendingin;
+
+|Admin|
+:Login Sistem;
+:Monitoring seluruh modul;
+:Kelola data pengguna;
+:Lihat data inventori;
+:Lihat laporan operasional;
+:Logout;
+
+|Owner|
+:Login Sistem;
+:Lihat dashboard ringkasan;
+:Lihat laporan inventori;
+:Lihat laporan penjualan;
+:Lihat laporan operasional;
+:Logout;
+
+stop
+@enduml

@@ -63,31 +63,31 @@ class ComposerStaticInitcab1f78f4b46d48852e51e7fad5ac203
     );
 
     public static $prefixLengthsPsr4 = array (
-        'v' => 
+        'v' =>
         array (
             'voku\\' => 5,
         ),
-        'p' => 
+        'p' =>
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
-        'Z' => 
+        'Z' =>
         array (
             'Z3d0X\\FilamentLogger\\Database\\Factories\\' => 40,
             'Z3d0X\\FilamentLogger\\' => 21,
         ),
-        'W' => 
+        'W' =>
         array (
             'Whoops\\' => 7,
             'Webmozart\\Assert\\' => 17,
         ),
-        'T' => 
+        'T' =>
         array (
             'TijsVerkoyen\\CssToInlineStyles\\' => 31,
             'Tests\\' => 6,
             'Termwind\\' => 9,
         ),
-        'S' => 
+        'S' =>
         array (
             'Symfony\\Polyfill\\Uuid\\' => 22,
             'Symfony\\Polyfill\\Php83\\' => 23,
@@ -132,7 +132,7 @@ class ComposerStaticInitcab1f78f4b46d48852e51e7fad5ac203
             'Spatie\\Backtrace\\' => 17,
             'Spatie\\Activitylog\\' => 19,
         ),
-        'R' => 
+        'R' =>
         array (
             'RyanChandler\\BladeCaptureDirective\\Database\\Factories\\' => 54,
             'RyanChandler\\BladeCaptureDirective\\' => 35,
@@ -140,7 +140,7 @@ class ComposerStaticInitcab1f78f4b46d48852e51e7fad5ac203
             'Ramsey\\Uuid\\' => 12,
             'Ramsey\\Collection\\' => 18,
         ),
-        'P' => 
+        'P' =>
         array (
             'Psy\\' => 4,
             'Psr\\SimpleCache\\' => 16,
@@ -163,22 +163,22 @@ class ComposerStaticInitcab1f78f4b46d48852e51e7fad5ac203
             'PHPUnit\\Architecture\\' => 21,
             'PHPStan\\PhpDocParser\\' => 21,
         ),
-        'O' => 
+        'O' =>
         array (
             'OpenSpout\\' => 10,
         ),
-        'N' => 
+        'N' =>
         array (
             'NunoMaduro\\Collision\\' => 21,
             'Njxqlus\\FilamentProgressbar\\' => 28,
         ),
-        'M' => 
+        'M' =>
         array (
             'Monolog\\' => 8,
             'Mockery\\' => 8,
             'Masterminds\\' => 12,
         ),
-        'L' => 
+        'L' =>
         array (
             'Livewire\\' => 9,
             'League\\Uri\\' => 11,
@@ -194,11 +194,11 @@ class ComposerStaticInitcab1f78f4b46d48852e51e7fad5ac203
             'Laravel\\Sail\\' => 13,
             'Laravel\\Prompts\\' => 16,
         ),
-        'K' => 
+        'K' =>
         array (
             'Kirschbaum\\PowerJoins\\' => 22,
         ),
-        'J' => 
+        'J' =>
         array (
             'Joshembling\\ImageOptimizer\\' => 27,
             'Jenssegers\\Agent\\' => 17,
@@ -206,17 +206,17 @@ class ComposerStaticInitcab1f78f4b46d48852e51e7fad5ac203
             'Jean85\\' => 7,
             'Jaybizzle\\CrawlerDetect\\' => 24,
         ),
-        'I' => 
+        'I' =>
         array (
             'Intervention\\Image\\' => 19,
             'Illuminate\\Support\\' => 19,
             'Illuminate\\' => 11,
         ),
-        'H' => 
+        'H' =>
         array (
             'Hasnayeen\\Themes\\' => 17,
         ),
-        'G' => 
+        'G' =>
         array (
             'GuzzleHttp\\UriTemplate\\' => 23,
             'GuzzleHttp\\Psr7\\' => 16,
@@ -224,7 +224,7 @@ class ComposerStaticInitcab1f78f4b46d48852e51e7fad5ac203
             'GuzzleHttp\\' => 11,
             'GrahamCampbell\\ResultType\\' => 26,
         ),
-        'F' => 
+        'F' =>
         array (
             'Fruitcake\\Cors\\' => 15,
             'Filament\\Widgets\\' => 17,
@@ -238,11 +238,11 @@ class ComposerStaticInitcab1f78f4b46d48852e51e7fad5ac203
             'Fidry\\CpuCoreCounter\\' => 21,
             'Faker\\' => 6,
         ),
-        'E' => 
+        'E' =>
         array (
             'Egulias\\EmailValidator\\' => 23,
         ),
-        'D' => 
+        'D' =>
         array (
             'Dotenv\\' => 7,
             'Doctrine\\Inflector\\' => 19,
@@ -260,7 +260,7 @@ class ComposerStaticInitcab1f78f4b46d48852e51e7fad5ac203
             'DanHarrin\\DateFormatConverter\\' => 30,
             'DASPRiD\\Enum\\' => 13,
         ),
-        'C' => 
+        'C' =>
         array (
             'Cron\\' => 5,
             'Composer\\Pcre\\' => 14,
@@ -268,7 +268,7 @@ class ComposerStaticInitcab1f78f4b46d48852e51e7fad5ac203
             'Carbon\\Doctrine\\' => 16,
             'Carbon\\' => 7,
         ),
-        'B' => 
+        'B' =>
         array (
             'Brick\\Math\\' => 11,
             'BladeUI\\Icons\\' => 14,
@@ -279,7 +279,7 @@ class ComposerStaticInitcab1f78f4b46d48852e51e7fad5ac203
             'Barryvdh\\Debugbar\\' => 18,
             'BaconQrCode\\' => 12,
         ),
-        'A' => 
+        'A' =>
         array (
             'Aymanalhattami\\FilamentSlimScrollbar\\' => 37,
             'Awcodes\\Overlook\\' => 17,
@@ -290,650 +290,650 @@ class ComposerStaticInitcab1f78f4b46d48852e51e7fad5ac203
     );
 
     public static $prefixDirsPsr4 = array (
-        'voku\\' => 
+        'voku\\' =>
         array (
             0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
         ),
-        'phpDocumentor\\Reflection\\' => 
+        'phpDocumentor\\Reflection\\' =>
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
         ),
-        'Z3d0X\\FilamentLogger\\Database\\Factories\\' => 
+        'Z3d0X\\FilamentLogger\\Database\\Factories\\' =>
         array (
             0 => __DIR__ . '/..' . '/z3d0x/filament-logger/database/factories',
         ),
-        'Z3d0X\\FilamentLogger\\' => 
+        'Z3d0X\\FilamentLogger\\' =>
         array (
             0 => __DIR__ . '/..' . '/z3d0x/filament-logger/src',
         ),
-        'Whoops\\' => 
+        'Whoops\\' =>
         array (
             0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
         ),
-        'Webmozart\\Assert\\' => 
+        'Webmozart\\Assert\\' =>
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
         ),
-        'TijsVerkoyen\\CssToInlineStyles\\' => 
+        'TijsVerkoyen\\CssToInlineStyles\\' =>
         array (
             0 => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src',
         ),
-        'Tests\\' => 
+        'Tests\\' =>
         array (
             0 => __DIR__ . '/../..' . '/tests',
         ),
-        'Termwind\\' => 
+        'Termwind\\' =>
         array (
             0 => __DIR__ . '/..' . '/nunomaduro/termwind/src',
         ),
-        'Symfony\\Polyfill\\Uuid\\' => 
+        'Symfony\\Polyfill\\Uuid\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-uuid',
         ),
-        'Symfony\\Polyfill\\Php83\\' => 
+        'Symfony\\Polyfill\\Php83\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php83',
         ),
-        'Symfony\\Polyfill\\Php80\\' => 
+        'Symfony\\Polyfill\\Php80\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
         ),
-        'Symfony\\Polyfill\\Mbstring\\' => 
+        'Symfony\\Polyfill\\Mbstring\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
-        'Symfony\\Polyfill\\Intl\\Normalizer\\' => 
+        'Symfony\\Polyfill\\Intl\\Normalizer\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer',
         ),
-        'Symfony\\Polyfill\\Intl\\Idn\\' => 
+        'Symfony\\Polyfill\\Intl\\Idn\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-intl-idn',
         ),
-        'Symfony\\Polyfill\\Intl\\Grapheme\\' => 
+        'Symfony\\Polyfill\\Intl\\Grapheme\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme',
         ),
-        'Symfony\\Polyfill\\Ctype\\' => 
+        'Symfony\\Polyfill\\Ctype\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
-        'Symfony\\Contracts\\Translation\\' => 
+        'Symfony\\Contracts\\Translation\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/translation-contracts',
         ),
-        'Symfony\\Contracts\\Service\\' => 
+        'Symfony\\Contracts\\Service\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/service-contracts',
         ),
-        'Symfony\\Contracts\\EventDispatcher\\' => 
+        'Symfony\\Contracts\\EventDispatcher\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher-contracts',
         ),
-        'Symfony\\Component\\Yaml\\' => 
+        'Symfony\\Component\\Yaml\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
         ),
-        'Symfony\\Component\\VarDumper\\' => 
+        'Symfony\\Component\\VarDumper\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
-        'Symfony\\Component\\Uid\\' => 
+        'Symfony\\Component\\Uid\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/uid',
         ),
-        'Symfony\\Component\\Translation\\' => 
+        'Symfony\\Component\\Translation\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
         ),
-        'Symfony\\Component\\String\\' => 
+        'Symfony\\Component\\String\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/string',
         ),
-        'Symfony\\Component\\Routing\\' => 
+        'Symfony\\Component\\Routing\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/routing',
         ),
-        'Symfony\\Component\\Process\\' => 
+        'Symfony\\Component\\Process\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/process',
         ),
-        'Symfony\\Component\\Mime\\' => 
+        'Symfony\\Component\\Mime\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/mime',
         ),
-        'Symfony\\Component\\Mailer\\' => 
+        'Symfony\\Component\\Mailer\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/mailer',
         ),
-        'Symfony\\Component\\HttpKernel\\' => 
+        'Symfony\\Component\\HttpKernel\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/http-kernel',
         ),
-        'Symfony\\Component\\HttpFoundation\\' => 
+        'Symfony\\Component\\HttpFoundation\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/http-foundation',
         ),
-        'Symfony\\Component\\HtmlSanitizer\\' => 
+        'Symfony\\Component\\HtmlSanitizer\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/html-sanitizer',
         ),
-        'Symfony\\Component\\Finder\\' => 
+        'Symfony\\Component\\Finder\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/finder',
         ),
-        'Symfony\\Component\\EventDispatcher\\' => 
+        'Symfony\\Component\\EventDispatcher\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
         ),
-        'Symfony\\Component\\ErrorHandler\\' => 
+        'Symfony\\Component\\ErrorHandler\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/error-handler',
         ),
-        'Symfony\\Component\\CssSelector\\' => 
+        'Symfony\\Component\\CssSelector\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/css-selector',
         ),
-        'Symfony\\Component\\Console\\' => 
+        'Symfony\\Component\\Console\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
-        'Symfony\\Component\\Clock\\' => 
+        'Symfony\\Component\\Clock\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/clock',
         ),
-        'Swis\\Filament\\Backgrounds\\' => 
+        'Swis\\Filament\\Backgrounds\\' =>
         array (
             0 => __DIR__ . '/..' . '/swisnl/filament-backgrounds/src',
         ),
-        'Spatie\\QueryBuilder\\Database\\Factories\\' => 
+        'Spatie\\QueryBuilder\\Database\\Factories\\' =>
         array (
             0 => __DIR__ . '/..' . '/spatie/laravel-query-builder/database/factories',
         ),
-        'Spatie\\QueryBuilder\\' => 
+        'Spatie\\QueryBuilder\\' =>
         array (
             0 => __DIR__ . '/..' . '/spatie/laravel-query-builder/src',
         ),
-        'Spatie\\Permission\\' => 
+        'Spatie\\Permission\\' =>
         array (
             0 => __DIR__ . '/..' . '/spatie/laravel-permission/src',
         ),
-        'Spatie\\LaravelPackageTools\\' => 
+        'Spatie\\LaravelPackageTools\\' =>
         array (
             0 => __DIR__ . '/..' . '/spatie/laravel-package-tools/src',
         ),
-        'Spatie\\LaravelIgnition\\' => 
+        'Spatie\\LaravelIgnition\\' =>
         array (
             0 => __DIR__ . '/..' . '/spatie/laravel-ignition/src',
             1 => __DIR__ . '/..' . '/spatie/error-solutions/legacy/laravel-ignition',
         ),
-        'Spatie\\Invade\\' => 
+        'Spatie\\Invade\\' =>
         array (
             0 => __DIR__ . '/..' . '/spatie/invade/src',
         ),
-        'Spatie\\Ignition\\' => 
+        'Spatie\\Ignition\\' =>
         array (
             0 => __DIR__ . '/..' . '/spatie/ignition/src',
             1 => __DIR__ . '/..' . '/spatie/error-solutions/legacy/ignition',
         ),
-        'Spatie\\FlareClient\\' => 
+        'Spatie\\FlareClient\\' =>
         array (
             0 => __DIR__ . '/..' . '/spatie/flare-client-php/src',
         ),
-        'Spatie\\ErrorSolutions\\' => 
+        'Spatie\\ErrorSolutions\\' =>
         array (
             0 => __DIR__ . '/..' . '/spatie/error-solutions/src',
         ),
-        'Spatie\\Color\\' => 
+        'Spatie\\Color\\' =>
         array (
             0 => __DIR__ . '/..' . '/spatie/color/src',
         ),
-        'Spatie\\Backtrace\\' => 
+        'Spatie\\Backtrace\\' =>
         array (
             0 => __DIR__ . '/..' . '/spatie/backtrace/src',
         ),
-        'Spatie\\Activitylog\\' => 
+        'Spatie\\Activitylog\\' =>
         array (
             0 => __DIR__ . '/..' . '/spatie/laravel-activitylog/src',
         ),
-        'RyanChandler\\BladeCaptureDirective\\Database\\Factories\\' => 
+        'RyanChandler\\BladeCaptureDirective\\Database\\Factories\\' =>
         array (
             0 => __DIR__ . '/..' . '/ryangjchandler/blade-capture-directive/database/factories',
         ),
-        'RyanChandler\\BladeCaptureDirective\\' => 
+        'RyanChandler\\BladeCaptureDirective\\' =>
         array (
             0 => __DIR__ . '/..' . '/ryangjchandler/blade-capture-directive/src',
         ),
-        'Rupadana\\ApiService\\' => 
+        'Rupadana\\ApiService\\' =>
         array (
             0 => __DIR__ . '/..' . '/rupadana/filament-api-service/src',
         ),
-        'Ramsey\\Uuid\\' => 
+        'Ramsey\\Uuid\\' =>
         array (
             0 => __DIR__ . '/..' . '/ramsey/uuid/src',
         ),
-        'Ramsey\\Collection\\' => 
+        'Ramsey\\Collection\\' =>
         array (
             0 => __DIR__ . '/..' . '/ramsey/collection/src',
         ),
-        'Psy\\' => 
+        'Psy\\' =>
         array (
             0 => __DIR__ . '/..' . '/psy/psysh/src',
         ),
-        'Psr\\SimpleCache\\' => 
+        'Psr\\SimpleCache\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/simple-cache/src',
         ),
-        'Psr\\Log\\' => 
+        'Psr\\Log\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/log/src',
         ),
-        'Psr\\Http\\Message\\' => 
+        'Psr\\Http\\Message\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/http-factory/src',
             1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
-        'Psr\\Http\\Client\\' => 
+        'Psr\\Http\\Client\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/http-client/src',
         ),
-        'Psr\\EventDispatcher\\' => 
+        'Psr\\EventDispatcher\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/event-dispatcher/src',
         ),
-        'Psr\\Container\\' => 
+        'Psr\\Container\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
-        'Psr\\Clock\\' => 
+        'Psr\\Clock\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/clock/src',
         ),
-        'Psr\\Cache\\' => 
+        'Psr\\Cache\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
         ),
-        'PragmaRX\\Google2FA\\' => 
+        'PragmaRX\\Google2FA\\' =>
         array (
             0 => __DIR__ . '/..' . '/pragmarx/google2fa/src',
         ),
-        'PhpParser\\' => 
+        'PhpParser\\' =>
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
-        'PhpOption\\' => 
+        'PhpOption\\' =>
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
         ),
-        'Pest\\Plugin\\' => 
+        'Pest\\Plugin\\' =>
         array (
             0 => __DIR__ . '/..' . '/pestphp/pest-plugin/src',
         ),
-        'Pest\\Laravel\\' => 
+        'Pest\\Laravel\\' =>
         array (
             0 => __DIR__ . '/..' . '/pestphp/pest-plugin-laravel/src',
         ),
-        'Pest\\Arch\\' => 
+        'Pest\\Arch\\' =>
         array (
             0 => __DIR__ . '/..' . '/pestphp/pest-plugin-arch/src',
         ),
-        'Pest\\' => 
+        'Pest\\' =>
         array (
             0 => __DIR__ . '/..' . '/pestphp/pest/src',
         ),
-        'ParagonIE\\ConstantTime\\' => 
+        'ParagonIE\\ConstantTime\\' =>
         array (
             0 => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src',
         ),
-        'ParaTest\\' => 
+        'ParaTest\\' =>
         array (
             0 => __DIR__ . '/..' . '/brianium/paratest/src',
         ),
-        'PHPUnit\\Architecture\\' => 
+        'PHPUnit\\Architecture\\' =>
         array (
             0 => __DIR__ . '/..' . '/ta-tikoma/phpunit-architecture-test/src',
         ),
-        'PHPStan\\PhpDocParser\\' => 
+        'PHPStan\\PhpDocParser\\' =>
         array (
             0 => __DIR__ . '/..' . '/phpstan/phpdoc-parser/src',
         ),
-        'OpenSpout\\' => 
+        'OpenSpout\\' =>
         array (
             0 => __DIR__ . '/..' . '/openspout/openspout/src',
         ),
-        'NunoMaduro\\Collision\\' => 
+        'NunoMaduro\\Collision\\' =>
         array (
             0 => __DIR__ . '/..' . '/nunomaduro/collision/src',
         ),
-        'Njxqlus\\FilamentProgressbar\\' => 
+        'Njxqlus\\FilamentProgressbar\\' =>
         array (
             0 => __DIR__ . '/..' . '/njxqlus/filament-progressbar/src',
         ),
-        'Monolog\\' => 
+        'Monolog\\' =>
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
-        'Mockery\\' => 
+        'Mockery\\' =>
         array (
             0 => __DIR__ . '/..' . '/mockery/mockery/library/Mockery',
         ),
-        'Masterminds\\' => 
+        'Masterminds\\' =>
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
         ),
-        'Livewire\\' => 
+        'Livewire\\' =>
         array (
             0 => __DIR__ . '/..' . '/livewire/livewire/src',
         ),
-        'League\\Uri\\' => 
+        'League\\Uri\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/uri',
             1 => __DIR__ . '/..' . '/league/uri-interfaces',
         ),
-        'League\\MimeTypeDetection\\' => 
+        'League\\MimeTypeDetection\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/mime-type-detection/src',
         ),
-        'League\\Flysystem\\Local\\' => 
+        'League\\Flysystem\\Local\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/flysystem-local',
         ),
-        'League\\Flysystem\\' => 
+        'League\\Flysystem\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/flysystem/src',
         ),
-        'League\\Csv\\' => 
+        'League\\Csv\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/csv/src',
         ),
-        'League\\Config\\' => 
+        'League\\Config\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/config/src',
         ),
-        'League\\CommonMark\\' => 
+        'League\\CommonMark\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/commonmark/src',
         ),
-        'Laravel\\Tinker\\' => 
+        'Laravel\\Tinker\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
         ),
-        'Laravel\\SerializableClosure\\' => 
+        'Laravel\\SerializableClosure\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/serializable-closure/src',
         ),
-        'Laravel\\Sanctum\\' => 
+        'Laravel\\Sanctum\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/sanctum/src',
         ),
-        'Laravel\\Sail\\' => 
+        'Laravel\\Sail\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/sail/src',
         ),
-        'Laravel\\Prompts\\' => 
+        'Laravel\\Prompts\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/prompts/src',
         ),
-        'Kirschbaum\\PowerJoins\\' => 
+        'Kirschbaum\\PowerJoins\\' =>
         array (
             0 => __DIR__ . '/..' . '/kirschbaum-development/eloquent-power-joins/src',
         ),
-        'Joshembling\\ImageOptimizer\\' => 
+        'Joshembling\\ImageOptimizer\\' =>
         array (
             0 => __DIR__ . '/..' . '/joshembling/image-optimizer/src',
         ),
-        'Jenssegers\\Agent\\' => 
+        'Jenssegers\\Agent\\' =>
         array (
             0 => __DIR__ . '/..' . '/jenssegers/agent/src',
         ),
-        'Jeffgreco13\\FilamentBreezy\\' => 
+        'Jeffgreco13\\FilamentBreezy\\' =>
         array (
             0 => __DIR__ . '/..' . '/jeffgreco13/filament-breezy/src',
         ),
-        'Jean85\\' => 
+        'Jean85\\' =>
         array (
             0 => __DIR__ . '/..' . '/jean85/pretty-package-versions/src',
         ),
-        'Jaybizzle\\CrawlerDetect\\' => 
+        'Jaybizzle\\CrawlerDetect\\' =>
         array (
             0 => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src',
         ),
-        'Intervention\\Image\\' => 
+        'Intervention\\Image\\' =>
         array (
             0 => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image',
         ),
-        'Illuminate\\Support\\' => 
+        'Illuminate\\Support\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Macroable',
             1 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections',
             2 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Conditionable',
         ),
-        'Illuminate\\' => 
+        'Illuminate\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
         ),
-        'Hasnayeen\\Themes\\' => 
+        'Hasnayeen\\Themes\\' =>
         array (
             0 => __DIR__ . '/..' . '/hasnayeen/themes/src',
         ),
-        'GuzzleHttp\\UriTemplate\\' => 
+        'GuzzleHttp\\UriTemplate\\' =>
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/uri-template/src',
         ),
-        'GuzzleHttp\\Psr7\\' => 
+        'GuzzleHttp\\Psr7\\' =>
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
         ),
-        'GuzzleHttp\\Promise\\' => 
+        'GuzzleHttp\\Promise\\' =>
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/promises/src',
         ),
-        'GuzzleHttp\\' => 
+        'GuzzleHttp\\' =>
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
-        'GrahamCampbell\\ResultType\\' => 
+        'GrahamCampbell\\ResultType\\' =>
         array (
             0 => __DIR__ . '/..' . '/graham-campbell/result-type/src',
         ),
-        'Fruitcake\\Cors\\' => 
+        'Fruitcake\\Cors\\' =>
         array (
             0 => __DIR__ . '/..' . '/fruitcake/php-cors/src',
         ),
-        'Filament\\Widgets\\' => 
+        'Filament\\Widgets\\' =>
         array (
             0 => __DIR__ . '/..' . '/filament/widgets/src',
         ),
-        'Filament\\Tables\\' => 
+        'Filament\\Tables\\' =>
         array (
             0 => __DIR__ . '/..' . '/filament/tables/src',
         ),
-        'Filament\\Support\\' => 
+        'Filament\\Support\\' =>
         array (
             0 => __DIR__ . '/..' . '/filament/support/src',
         ),
-        'Filament\\Notifications\\' => 
+        'Filament\\Notifications\\' =>
         array (
             0 => __DIR__ . '/..' . '/filament/notifications/src',
         ),
-        'Filament\\Infolists\\' => 
+        'Filament\\Infolists\\' =>
         array (
             0 => __DIR__ . '/..' . '/filament/infolists/src',
         ),
-        'Filament\\Forms\\' => 
+        'Filament\\Forms\\' =>
         array (
             0 => __DIR__ . '/..' . '/filament/forms/src',
         ),
-        'Filament\\Actions\\' => 
+        'Filament\\Actions\\' =>
         array (
             0 => __DIR__ . '/..' . '/filament/actions/src',
         ),
-        'Filament\\' => 
+        'Filament\\' =>
         array (
             0 => __DIR__ . '/..' . '/filament/filament/src',
         ),
-        'Fidry\\CpuCoreCounter\\' => 
+        'Fidry\\CpuCoreCounter\\' =>
         array (
             0 => __DIR__ . '/..' . '/fidry/cpu-core-counter/src',
         ),
-        'Faker\\' => 
+        'Faker\\' =>
         array (
             0 => __DIR__ . '/..' . '/fakerphp/faker/src/Faker',
         ),
-        'Egulias\\EmailValidator\\' => 
+        'Egulias\\EmailValidator\\' =>
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/src',
         ),
-        'Dotenv\\' => 
+        'Dotenv\\' =>
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
         ),
-        'Doctrine\\Inflector\\' => 
+        'Doctrine\\Inflector\\' =>
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector',
         ),
-        'Doctrine\\Deprecations\\' => 
+        'Doctrine\\Deprecations\\' =>
         array (
             0 => __DIR__ . '/..' . '/doctrine/deprecations/src',
         ),
-        'Doctrine\\DBAL\\' => 
+        'Doctrine\\DBAL\\' =>
         array (
             0 => __DIR__ . '/..' . '/doctrine/dbal/src',
         ),
-        'Doctrine\\Common\\Lexer\\' => 
+        'Doctrine\\Common\\Lexer\\' =>
         array (
             0 => __DIR__ . '/..' . '/doctrine/lexer/src',
         ),
-        'Dflydev\\DotAccessData\\' => 
+        'Dflydev\\DotAccessData\\' =>
         array (
             0 => __DIR__ . '/..' . '/dflydev/dot-access-data/src',
         ),
-        'DeepCopy\\' => 
+        'DeepCopy\\' =>
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
-        'Dedoc\\Scramble\\Database\\Factories\\' => 
+        'Dedoc\\Scramble\\Database\\Factories\\' =>
         array (
             0 => __DIR__ . '/..' . '/dedoc/scramble/database/factories',
         ),
-        'Dedoc\\Scramble\\' => 
+        'Dedoc\\Scramble\\' =>
         array (
             0 => __DIR__ . '/..' . '/dedoc/scramble/src',
         ),
-        'DebugBar\\' => 
+        'DebugBar\\' =>
         array (
             0 => __DIR__ . '/..' . '/php-debugbar/php-debugbar/src/DebugBar',
         ),
-        'Database\\Seeders\\' => 
+        'Database\\Seeders\\' =>
         array (
             0 => __DIR__ . '/../..' . '/database/seeders',
             1 => __DIR__ . '/..' . '/laravel/pint/database/seeders',
         ),
-        'Database\\Factories\\' => 
+        'Database\\Factories\\' =>
         array (
             0 => __DIR__ . '/../..' . '/database/factories',
             1 => __DIR__ . '/..' . '/laravel/pint/database/factories',
         ),
-        'DanHarrin\\LivewireRateLimiting\\' => 
+        'DanHarrin\\LivewireRateLimiting\\' =>
         array (
             0 => __DIR__ . '/..' . '/danharrin/livewire-rate-limiting/src',
         ),
-        'DanHarrin\\DateFormatConverter\\' => 
+        'DanHarrin\\DateFormatConverter\\' =>
         array (
             0 => __DIR__ . '/..' . '/danharrin/date-format-converter/src',
         ),
-        'DASPRiD\\Enum\\' => 
+        'DASPRiD\\Enum\\' =>
         array (
             0 => __DIR__ . '/..' . '/dasprid/enum/src',
         ),
-        'Cron\\' => 
+        'Cron\\' =>
         array (
             0 => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron',
         ),
-        'Composer\\Pcre\\' => 
+        'Composer\\Pcre\\' =>
         array (
             0 => __DIR__ . '/..' . '/composer/pcre/src',
         ),
-        'Composer\\ClassMapGenerator\\' => 
+        'Composer\\ClassMapGenerator\\' =>
         array (
             0 => __DIR__ . '/..' . '/composer/class-map-generator/src',
         ),
-        'Carbon\\Doctrine\\' => 
+        'Carbon\\Doctrine\\' =>
         array (
             0 => __DIR__ . '/..' . '/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine',
         ),
-        'Carbon\\' => 
+        'Carbon\\' =>
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
         ),
-        'Brick\\Math\\' => 
+        'Brick\\Math\\' =>
         array (
             0 => __DIR__ . '/..' . '/brick/math/src',
         ),
-        'BladeUI\\Icons\\' => 
+        'BladeUI\\Icons\\' =>
         array (
             0 => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src',
         ),
-        'BladeUI\\Heroicons\\' => 
+        'BladeUI\\Heroicons\\' =>
         array (
             0 => __DIR__ . '/..' . '/blade-ui-kit/blade-heroicons/src',
         ),
-        'BezhanSalleh\\FilamentShield\\Database\\Factories\\' => 
+        'BezhanSalleh\\FilamentShield\\Database\\Factories\\' =>
         array (
             0 => __DIR__ . '/..' . '/bezhansalleh/filament-shield/database/factories',
         ),
-        'BezhanSalleh\\FilamentShield\\' => 
+        'BezhanSalleh\\FilamentShield\\' =>
         array (
             0 => __DIR__ . '/..' . '/bezhansalleh/filament-shield/src',
         ),
-        'Barryvdh\\LaravelIdeHelper\\' => 
+        'Barryvdh\\LaravelIdeHelper\\' =>
         array (
             0 => __DIR__ . '/..' . '/barryvdh/laravel-ide-helper/src',
         ),
-        'Barryvdh\\Debugbar\\' => 
+        'Barryvdh\\Debugbar\\' =>
         array (
             0 => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src',
         ),
-        'BaconQrCode\\' => 
+        'BaconQrCode\\' =>
         array (
             0 => __DIR__ . '/..' . '/bacon/bacon-qr-code/src',
         ),
-        'Aymanalhattami\\FilamentSlimScrollbar\\' => 
+        'Aymanalhattami\\FilamentSlimScrollbar\\' =>
         array (
             0 => __DIR__ . '/..' . '/aymanalhattami/filament-slim-scrollbar/src',
         ),
-        'Awcodes\\Overlook\\' => 
+        'Awcodes\\Overlook\\' =>
         array (
             0 => __DIR__ . '/..' . '/awcodes/overlook/src',
         ),
-        'Awcodes\\LightSwitch\\' => 
+        'Awcodes\\LightSwitch\\' =>
         array (
             0 => __DIR__ . '/..' . '/awcodes/light-switch/src',
         ),
-        'App\\' => 
+        'App\\' =>
         array (
             0 => __DIR__ . '/../..' . '/app',
             1 => __DIR__ . '/..' . '/laravel/pint/app',
         ),
-        'AnourValar\\EloquentSerialize\\' => 
+        'AnourValar\\EloquentSerialize\\' =>
         array (
             0 => __DIR__ . '/..' . '/anourvalar/eloquent-serialize/src',
         ),
     );
 
     public static $prefixesPsr0 = array (
-        'D' => 
+        'D' =>
         array (
-            'Detection' => 
+            'Detection' =>
             array (
                 0 => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/namespaced',
             ),
         ),
-        'B' => 
+        'B' =>
         array (
-            'Barryvdh' => 
+            'Barryvdh' =>
             array (
                 0 => __DIR__ . '/..' . '/barryvdh/reflection-docblock/src',
             ),
@@ -950,514 +950,20 @@ class ComposerStaticInitcab1f78f4b46d48852e51e7fad5ac203
         'App\\Console\\Commands\\DevIde' => __DIR__ . '/../..' . '/app/Console/Commands/DevIde.php',
         'App\\Console\\Commands\\ProjectInitialize' => __DIR__ . '/../..' . '/app/Console/Commands/ProjectInitialize.php',
         'App\\Console\\Commands\\ProjectUpdate' => __DIR__ . '/../..' . '/app/Console/Commands/ProjectUpdate.php',
-        'App\\Filament\\Admin\\Resources\\AnnualReportResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/AnnualReportResource.php',
-        'App\\Filament\\Admin\\Resources\\AnnualReportResource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/AnnualReportResource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\AnnualReportResource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/AnnualReportResource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\AnnualReportResource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/AnnualReportResource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\AnnualReportResource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/AnnualReportResource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\AnnualReportResource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/AnnualReportResource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\AnnualReportResource\\Pages\\CreateAnnualReport' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/AnnualReportResource/Pages/CreateAnnualReport.php',
-        'App\\Filament\\Admin\\Resources\\AnnualReportResource\\Pages\\EditAnnualReport' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/AnnualReportResource/Pages/EditAnnualReport.php',
-        'App\\Filament\\Admin\\Resources\\AnnualReportResource\\Pages\\ListAnnualReports' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/AnnualReportResource/Pages/ListAnnualReports.php',
-        'App\\Filament\\Admin\\Resources\\AvailableSizesResource\\Pages\\CreateAvailableSizes' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/AvailableSizesResource/Pages/CreateAvailableSizes.php',
-        'App\\Filament\\Admin\\Resources\\AvailableSizesResource\\Pages\\EditAvailableSizes' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/AvailableSizesResource/Pages/EditAvailableSizes.php',
-        'App\\Filament\\Admin\\Resources\\AvailableSizesResource\\Pages\\ListAvailableSizes' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/AvailableSizesResource/Pages/ListAvailableSizes.php',
-        'App\\Filament\\Admin\\Resources\\CSRInformationResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CSRInformationResource.php',
-        'App\\Filament\\Admin\\Resources\\CSRInformationResource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CSRInformationResource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\CSRInformationResource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CSRInformationResource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\CSRInformationResource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CSRInformationResource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\CSRInformationResource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CSRInformationResource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\CSRInformationResource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CSRInformationResource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\CSRInformationResource\\Pages\\CreateCSRInformation' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CSRInformationResource/Pages/CreateCSRInformation.php',
-        'App\\Filament\\Admin\\Resources\\CSRInformationResource\\Pages\\EditCSRInformation' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CSRInformationResource/Pages/EditCSRInformation.php',
-        'App\\Filament\\Admin\\Resources\\CSRInformationResource\\Pages\\ListCSRInformation' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CSRInformationResource/Pages/ListCSRInformation.php',
-        'App\\Filament\\Admin\\Resources\\CategoryResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CategoryResource.php',
-        'App\\Filament\\Admin\\Resources\\CategoryResource\\Pages\\CreateCategory' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CategoryResource/Pages/CreateCategory.php',
-        'App\\Filament\\Admin\\Resources\\CategoryResource\\Pages\\EditCategory' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CategoryResource/Pages/EditCategory.php',
-        'App\\Filament\\Admin\\Resources\\CategoryResource\\Pages\\ListCategories' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CategoryResource/Pages/ListCategories.php',
-        'App\\Filament\\Admin\\Resources\\CompanysDisclosureResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CompanysDisclosureResource.php',
-        'App\\Filament\\Admin\\Resources\\CompanysDisclosureResource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CompanysDisclosureResource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\CompanysDisclosureResource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CompanysDisclosureResource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\CompanysDisclosureResource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CompanysDisclosureResource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\CompanysDisclosureResource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CompanysDisclosureResource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\CompanysDisclosureResource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CompanysDisclosureResource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\CompanysDisclosureResource\\Pages\\CreateCompanysDisclosure' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CompanysDisclosureResource/Pages/CreateCompanysDisclosure.php',
-        'App\\Filament\\Admin\\Resources\\CompanysDisclosureResource\\Pages\\EditCompanysDisclosure' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CompanysDisclosureResource/Pages/EditCompanysDisclosure.php',
-        'App\\Filament\\Admin\\Resources\\CompanysDisclosureResource\\Pages\\ListCompanysDisclosures' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CompanysDisclosureResource/Pages/ListCompanysDisclosures.php',
-        'App\\Filament\\Admin\\Resources\\CompanysProspectusResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CompanysProspectusResource.php',
-        'App\\Filament\\Admin\\Resources\\CompanysProspectusResource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CompanysProspectusResource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\CompanysProspectusResource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CompanysProspectusResource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\CompanysProspectusResource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CompanysProspectusResource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\CompanysProspectusResource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CompanysProspectusResource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\CompanysProspectusResource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CompanysProspectusResource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\CompanysProspectusResource\\Pages\\CreateCompanysProspectus' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CompanysProspectusResource/Pages/CreateCompanysProspectus.php',
-        'App\\Filament\\Admin\\Resources\\CompanysProspectusResource\\Pages\\EditCompanysProspectus' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CompanysProspectusResource/Pages/EditCompanysProspectus.php',
-        'App\\Filament\\Admin\\Resources\\CompanysProspectusResource\\Pages\\ListCompanysProspectuses' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CompanysProspectusResource/Pages/ListCompanysProspectuses.php',
-        'App\\Filament\\Admin\\Resources\\CreamerResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CreamerResource.php',
-        'App\\Filament\\Admin\\Resources\\CreamerResource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CreamerResource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\CreamerResource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CreamerResource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\CreamerResource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CreamerResource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\CreamerResource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CreamerResource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\CreamerResource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CreamerResource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\CreamerResource\\Pages\\CreateCreamer' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CreamerResource/Pages/CreateCreamer.php',
-        'App\\Filament\\Admin\\Resources\\CreamerResource\\Pages\\EditCreamer' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CreamerResource/Pages/EditCreamer.php',
-        'App\\Filament\\Admin\\Resources\\CreamerResource\\Pages\\ListCreamers' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/CreamerResource/Pages/ListCreamers.php',
-        'App\\Filament\\Admin\\Resources\\DescribeCompIndexResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/DescribeCompIndexResource.php',
-        'App\\Filament\\Admin\\Resources\\DescribeCompIndexResource\\Pages\\CreateDescribeCompIndex' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/DescribeCompIndexResource/Pages/CreateDescribeCompIndex.php',
-        'App\\Filament\\Admin\\Resources\\DescribeCompIndexResource\\Pages\\EditDescribeCompIndex' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/DescribeCompIndexResource/Pages/EditDescribeCompIndex.php',
-        'App\\Filament\\Admin\\Resources\\DescribeCompIndexResource\\Pages\\ListDescribeCompIndices' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/DescribeCompIndexResource/Pages/ListDescribeCompIndices.php',
-        'App\\Filament\\Admin\\Resources\\FAQBobakingResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQBobakingResource.php',
-        'App\\Filament\\Admin\\Resources\\FAQBobakingResource\\Pages\\CreateFAQBobaking' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQBobakingResource/Pages/CreateFAQBobaking.php',
-        'App\\Filament\\Admin\\Resources\\FAQBobakingResource\\Pages\\EditFAQBobaking' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQBobakingResource/Pages/EditFAQBobaking.php',
-        'App\\Filament\\Admin\\Resources\\FAQBobakingResource\\Pages\\ListFAQBobakings' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQBobakingResource/Pages/ListFAQBobakings.php',
-        'App\\Filament\\Admin\\Resources\\FAQIpilotResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQIpilotResource.php',
-        'App\\Filament\\Admin\\Resources\\FAQIpilotResource\\Pages\\CreateFAQIpilot' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQIpilotResource/Pages/CreateFAQIpilot.php',
-        'App\\Filament\\Admin\\Resources\\FAQIpilotResource\\Pages\\EditFAQIpilot' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQIpilotResource/Pages/EditFAQIpilot.php',
-        'App\\Filament\\Admin\\Resources\\FAQIpilotResource\\Pages\\ListFAQIpilots' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQIpilotResource/Pages/ListFAQIpilots.php',
-        'App\\Filament\\Admin\\Resources\\FAQJTCResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQJTCResource.php',
-        'App\\Filament\\Admin\\Resources\\FAQJTCResource\\Pages\\CreateFAQJTC' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQJTCResource/Pages/CreateFAQJTC.php',
-        'App\\Filament\\Admin\\Resources\\FAQJTCResource\\Pages\\EditFAQJTC' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQJTCResource/Pages/EditFAQJTC.php',
-        'App\\Filament\\Admin\\Resources\\FAQJTCResource\\Pages\\ListFAQJTCS' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQJTCResource/Pages/ListFAQJTCS.php',
-        'App\\Filament\\Admin\\Resources\\FAQLavazzaResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQLavazzaResource.php',
-        'App\\Filament\\Admin\\Resources\\FAQLavazzaResource\\Pages\\CreateFAQLavazza' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQLavazzaResource/Pages/CreateFAQLavazza.php',
-        'App\\Filament\\Admin\\Resources\\FAQLavazzaResource\\Pages\\EditFAQLavazza' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQLavazzaResource/Pages/EditFAQLavazza.php',
-        'App\\Filament\\Admin\\Resources\\FAQLavazzaResource\\Pages\\ListFAQLavazzas' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQLavazzaResource/Pages/ListFAQLavazzas.php',
-        'App\\Filament\\Admin\\Resources\\FAQMilklabResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQMilklabResource.php',
-        'App\\Filament\\Admin\\Resources\\FAQMilklabResource\\Pages\\CreateFAQMilklab' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQMilklabResource/Pages/CreateFAQMilklab.php',
-        'App\\Filament\\Admin\\Resources\\FAQMilklabResource\\Pages\\EditFAQMilklab' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQMilklabResource/Pages/EditFAQMilklab.php',
-        'App\\Filament\\Admin\\Resources\\FAQMilklabResource\\Pages\\ListFAQMilklabs' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQMilklabResource/Pages/ListFAQMilklabs.php',
-        'App\\Filament\\Admin\\Resources\\FAQMoninResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQMoninResource.php',
-        'App\\Filament\\Admin\\Resources\\FAQMoninResource\\Pages\\CreateFAQMonin' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQMoninResource/Pages/CreateFAQMonin.php',
-        'App\\Filament\\Admin\\Resources\\FAQMoninResource\\Pages\\EditFAQMonin' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQMoninResource/Pages/EditFAQMonin.php',
-        'App\\Filament\\Admin\\Resources\\FAQMoninResource\\Pages\\ListFAQMonins' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQMoninResource/Pages/ListFAQMonins.php',
-        'App\\Filament\\Admin\\Resources\\FAQSantinoResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQSantinoResource.php',
-        'App\\Filament\\Admin\\Resources\\FAQSantinoResource\\Pages\\CreateFAQSantino' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQSantinoResource/Pages/CreateFAQSantino.php',
-        'App\\Filament\\Admin\\Resources\\FAQSantinoResource\\Pages\\EditFAQSantino' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQSantinoResource/Pages/EditFAQSantino.php',
-        'App\\Filament\\Admin\\Resources\\FAQSantinoResource\\Pages\\ListFAQSantinos' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQSantinoResource/Pages/ListFAQSantinos.php',
-        'App\\Filament\\Admin\\Resources\\FAQStrawmeResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQStrawmeResource.php',
-        'App\\Filament\\Admin\\Resources\\FAQStrawmeResource\\Pages\\CreateFAQStrawme' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQStrawmeResource/Pages/CreateFAQStrawme.php',
-        'App\\Filament\\Admin\\Resources\\FAQStrawmeResource\\Pages\\EditFAQStrawme' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQStrawmeResource/Pages/EditFAQStrawme.php',
-        'App\\Filament\\Admin\\Resources\\FAQStrawmeResource\\Pages\\ListFAQStrawmes' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FAQStrawmeResource/Pages/ListFAQStrawmes.php',
-        'App\\Filament\\Admin\\Resources\\FinancialReportResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FinancialReportResource.php',
-        'App\\Filament\\Admin\\Resources\\FinancialReportResource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FinancialReportResource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\FinancialReportResource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FinancialReportResource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\FinancialReportResource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FinancialReportResource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\FinancialReportResource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FinancialReportResource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\FinancialReportResource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FinancialReportResource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\FinancialReportResource\\Pages\\CreateFinancialReport' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FinancialReportResource/Pages/CreateFinancialReport.php',
-        'App\\Filament\\Admin\\Resources\\FinancialReportResource\\Pages\\EditFinancialReport' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FinancialReportResource/Pages/EditFinancialReport.php',
-        'App\\Filament\\Admin\\Resources\\FinancialReportResource\\Pages\\ListFinancialReports' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FinancialReportResource/Pages/ListFinancialReports.php',
-        'App\\Filament\\Admin\\Resources\\FrappeResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FrappeResource.php',
-        'App\\Filament\\Admin\\Resources\\FrappeResource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FrappeResource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\FrappeResource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FrappeResource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\FrappeResource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FrappeResource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\FrappeResource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FrappeResource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\FrappeResource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FrappeResource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\FrappeResource\\Pages\\CreateFrappe' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FrappeResource/Pages/CreateFrappe.php',
-        'App\\Filament\\Admin\\Resources\\FrappeResource\\Pages\\EditFrappe' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FrappeResource/Pages/EditFrappe.php',
-        'App\\Filament\\Admin\\Resources\\FrappeResource\\Pages\\ListFrappes' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FrappeResource/Pages/ListFrappes.php',
-        'App\\Filament\\Admin\\Resources\\FruitmixResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FruitmixResource.php',
-        'App\\Filament\\Admin\\Resources\\FruitmixResource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FruitmixResource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\FruitmixResource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FruitmixResource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\FruitmixResource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FruitmixResource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\FruitmixResource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FruitmixResource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\FruitmixResource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FruitmixResource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\FruitmixResource\\Pages\\CreateFruitmix' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FruitmixResource/Pages/CreateFruitmix.php',
-        'App\\Filament\\Admin\\Resources\\FruitmixResource\\Pages\\EditFruitmix' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FruitmixResource/Pages/EditFruitmix.php',
-        'App\\Filament\\Admin\\Resources\\FruitmixResource\\Pages\\ListFruitmixes' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/FruitmixResource/Pages/ListFruitmixes.php',
-        'App\\Filament\\Admin\\Resources\\GeneralMeetingResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/GeneralMeetingResource.php',
-        'App\\Filament\\Admin\\Resources\\GeneralMeetingResource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/GeneralMeetingResource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\GeneralMeetingResource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/GeneralMeetingResource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\GeneralMeetingResource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/GeneralMeetingResource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\GeneralMeetingResource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/GeneralMeetingResource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\GeneralMeetingResource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/GeneralMeetingResource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\GeneralMeetingResource\\Pages\\CreateGeneralMeeting' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/GeneralMeetingResource/Pages/CreateGeneralMeeting.php',
-        'App\\Filament\\Admin\\Resources\\GeneralMeetingResource\\Pages\\EditGeneralMeeting' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/GeneralMeetingResource/Pages/EditGeneralMeeting.php',
-        'App\\Filament\\Admin\\Resources\\GeneralMeetingResource\\Pages\\ListGeneralMeetings' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/GeneralMeetingResource/Pages/ListGeneralMeetings.php',
-        'App\\Filament\\Admin\\Resources\\IPilot2Resource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot2Resource.php',
-        'App\\Filament\\Admin\\Resources\\IPilot2Resource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot2Resource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot2Resource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot2Resource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot2Resource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot2Resource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot2Resource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot2Resource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot2Resource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot2Resource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot2Resource\\Pages\\CreateIPilot2' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot2Resource/Pages/CreateIPilot2.php',
-        'App\\Filament\\Admin\\Resources\\IPilot2Resource\\Pages\\EditIPilot2' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot2Resource/Pages/EditIPilot2.php',
-        'App\\Filament\\Admin\\Resources\\IPilot2Resource\\Pages\\ListIPilot2s' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot2Resource/Pages/ListIPilot2s.php',
-        'App\\Filament\\Admin\\Resources\\IPilot3Resource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot3Resource.php',
-        'App\\Filament\\Admin\\Resources\\IPilot3Resource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot3Resource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot3Resource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot3Resource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot3Resource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot3Resource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot3Resource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot3Resource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot3Resource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot3Resource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot3Resource\\Pages\\CreateIPilot3' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot3Resource/Pages/CreateIPilot3.php',
-        'App\\Filament\\Admin\\Resources\\IPilot3Resource\\Pages\\EditIPilot3' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot3Resource/Pages/EditIPilot3.php',
-        'App\\Filament\\Admin\\Resources\\IPilot3Resource\\Pages\\ListIPilot3s' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot3Resource/Pages/ListIPilot3s.php',
-        'App\\Filament\\Admin\\Resources\\IPilot4Resource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot4Resource.php',
-        'App\\Filament\\Admin\\Resources\\IPilot4Resource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot4Resource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot4Resource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot4Resource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot4Resource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot4Resource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot4Resource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot4Resource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot4Resource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot4Resource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot4Resource\\Pages\\CreateIPilot4' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot4Resource/Pages/CreateIPilot4.php',
-        'App\\Filament\\Admin\\Resources\\IPilot4Resource\\Pages\\EditIPilot4' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot4Resource/Pages/EditIPilot4.php',
-        'App\\Filament\\Admin\\Resources\\IPilot4Resource\\Pages\\ListIPilot4s' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot4Resource/Pages/ListIPilot4s.php',
-        'App\\Filament\\Admin\\Resources\\IPilot5Resource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot5Resource.php',
-        'App\\Filament\\Admin\\Resources\\IPilot5Resource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot5Resource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot5Resource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot5Resource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot5Resource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot5Resource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot5Resource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot5Resource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot5Resource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot5Resource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot5Resource\\Pages\\CreateIPilot5' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot5Resource/Pages/CreateIPilot5.php',
-        'App\\Filament\\Admin\\Resources\\IPilot5Resource\\Pages\\EditIPilot5' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot5Resource/Pages/EditIPilot5.php',
-        'App\\Filament\\Admin\\Resources\\IPilot5Resource\\Pages\\ListIPilot5s' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot5Resource/Pages/ListIPilot5s.php',
-        'App\\Filament\\Admin\\Resources\\IPilot6Resource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot6Resource.php',
-        'App\\Filament\\Admin\\Resources\\IPilot6Resource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot6Resource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot6Resource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot6Resource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot6Resource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot6Resource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot6Resource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot6Resource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot6Resource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot6Resource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot6Resource\\Pages\\CreateIPilot6' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot6Resource/Pages/CreateIPilot6.php',
-        'App\\Filament\\Admin\\Resources\\IPilot6Resource\\Pages\\EditIPilot6' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot6Resource/Pages/EditIPilot6.php',
-        'App\\Filament\\Admin\\Resources\\IPilot6Resource\\Pages\\ListIPilot6s' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot6Resource/Pages/ListIPilot6s.php',
-        'App\\Filament\\Admin\\Resources\\IPilot7Resource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot7Resource.php',
-        'App\\Filament\\Admin\\Resources\\IPilot7Resource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot7Resource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot7Resource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot7Resource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot7Resource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot7Resource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot7Resource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot7Resource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot7Resource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot7Resource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilot7Resource\\Pages\\CreateIPilot7' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot7Resource/Pages/CreateIPilot7.php',
-        'App\\Filament\\Admin\\Resources\\IPilot7Resource\\Pages\\EditIPilot7' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot7Resource/Pages/EditIPilot7.php',
-        'App\\Filament\\Admin\\Resources\\IPilot7Resource\\Pages\\ListIPilot7s' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilot7Resource/Pages/ListIPilot7s.php',
-        'App\\Filament\\Admin\\Resources\\IPilotResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilotResource.php',
-        'App\\Filament\\Admin\\Resources\\IPilotResource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilotResource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilotResource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilotResource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilotResource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilotResource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilotResource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilotResource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilotResource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilotResource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\IPilotResource\\Pages\\CreateIPilot' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilotResource/Pages/CreateIPilot.php',
-        'App\\Filament\\Admin\\Resources\\IPilotResource\\Pages\\EditIPilot' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilotResource/Pages/EditIPilot.php',
-        'App\\Filament\\Admin\\Resources\\IPilotResource\\Pages\\ListIPilots' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/IPilotResource/Pages/ListIPilots.php',
-        'App\\Filament\\Admin\\Resources\\InfoIndexResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/InfoIndexResource.php',
-        'App\\Filament\\Admin\\Resources\\InfoIndexResource\\Pages\\CreateInfoIndex' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/InfoIndexResource/Pages/CreateInfoIndex.php',
-        'App\\Filament\\Admin\\Resources\\InfoIndexResource\\Pages\\EditInfoIndex' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/InfoIndexResource/Pages/EditInfoIndex.php',
-        'App\\Filament\\Admin\\Resources\\InfoIndexResource\\Pages\\ListInfoIndices' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/InfoIndexResource/Pages/ListInfoIndices.php',
-        'App\\Filament\\Admin\\Resources\\InstaFeed2Resource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/InstaFeed2Resource.php',
-        'App\\Filament\\Admin\\Resources\\InstaFeed2Resource\\Pages\\CreateInstaFeed2' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/InstaFeed2Resource/Pages/CreateInstaFeed2.php',
-        'App\\Filament\\Admin\\Resources\\InstaFeed2Resource\\Pages\\EditInstaFeed2' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/InstaFeed2Resource/Pages/EditInstaFeed2.php',
-        'App\\Filament\\Admin\\Resources\\InstaFeed2Resource\\Pages\\ListInstaFeed2s' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/InstaFeed2Resource/Pages/ListInstaFeed2s.php',
-        'App\\Filament\\Admin\\Resources\\InstaFeedResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/InstaFeedResource.php',
-        'App\\Filament\\Admin\\Resources\\InstaFeedResource\\Pages\\CreateInstaFeed' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/InstaFeedResource/Pages/CreateInstaFeed.php',
-        'App\\Filament\\Admin\\Resources\\InstaFeedResource\\Pages\\EditInstaFeed' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/InstaFeedResource/Pages/EditInstaFeed.php',
-        'App\\Filament\\Admin\\Resources\\InstaFeedResource\\Pages\\ListInstaFeeds' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/InstaFeedResource/Pages/ListInstaFeeds.php',
-        'App\\Filament\\Admin\\Resources\\InstaLayoutResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/InstaLayoutResource.php',
-        'App\\Filament\\Admin\\Resources\\InstaLayoutResource\\Pages\\CreateInstaLayout' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/InstaLayoutResource/Pages/CreateInstaLayout.php',
-        'App\\Filament\\Admin\\Resources\\InstaLayoutResource\\Pages\\EditInstaLayout' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/InstaLayoutResource/Pages/EditInstaLayout.php',
-        'App\\Filament\\Admin\\Resources\\InstaLayoutResource\\Pages\\ListInstaLayouts' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/InstaLayoutResource/Pages/ListInstaLayouts.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlender2Resource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlender2Resource.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlender2Resource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlender2Resource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlender2Resource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlender2Resource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlender2Resource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlender2Resource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlender2Resource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlender2Resource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlender2Resource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlender2Resource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlender2Resource\\Pages\\CreateJTCBlender2' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlender2Resource/Pages/CreateJTCBlender2.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlender2Resource\\Pages\\EditJTCBlender2' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlender2Resource/Pages/EditJTCBlender2.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlender2Resource\\Pages\\ListJTCBlender2s' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlender2Resource/Pages/ListJTCBlender2s.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlender3Resource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlender3Resource.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlender3Resource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlender3Resource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlender3Resource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlender3Resource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlender3Resource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlender3Resource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlender3Resource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlender3Resource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlender3Resource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlender3Resource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlender3Resource\\Pages\\CreateJTCBlender3' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlender3Resource/Pages/CreateJTCBlender3.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlender3Resource\\Pages\\EditJTCBlender3' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlender3Resource/Pages/EditJTCBlender3.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlender3Resource\\Pages\\ListJTCBlender3s' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlender3Resource/Pages/ListJTCBlender3s.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlenderResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlenderResource.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlenderResource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlenderResource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlenderResource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlenderResource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlenderResource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlenderResource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlenderResource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlenderResource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlenderResource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlenderResource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlenderResource\\Pages\\CreateJTCBlender' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlenderResource/Pages/CreateJTCBlender.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlenderResource\\Pages\\EditJTCBlender' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlenderResource/Pages/EditJTCBlender.php',
-        'App\\Filament\\Admin\\Resources\\JTCBlenderResource\\Pages\\ListJTCBlenders' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/JTCBlenderResource/Pages/ListJTCBlenders.php',
-        'App\\Filament\\Admin\\Resources\\Lavazza2Resource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/Lavazza2Resource.php',
-        'App\\Filament\\Admin\\Resources\\Lavazza2Resource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/Lavazza2Resource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\Lavazza2Resource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/Lavazza2Resource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\Lavazza2Resource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/Lavazza2Resource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\Lavazza2Resource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/Lavazza2Resource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\Lavazza2Resource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/Lavazza2Resource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\Lavazza2Resource\\Pages\\CreateLavazza2' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/Lavazza2Resource/Pages/CreateLavazza2.php',
-        'App\\Filament\\Admin\\Resources\\Lavazza2Resource\\Pages\\EditLavazza2' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/Lavazza2Resource/Pages/EditLavazza2.php',
-        'App\\Filament\\Admin\\Resources\\Lavazza2Resource\\Pages\\ListLavazza2s' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/Lavazza2Resource/Pages/ListLavazza2s.php',
-        'App\\Filament\\Admin\\Resources\\Lavazza3Resource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/Lavazza3Resource.php',
-        'App\\Filament\\Admin\\Resources\\Lavazza3Resource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/Lavazza3Resource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\Lavazza3Resource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/Lavazza3Resource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\Lavazza3Resource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/Lavazza3Resource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\Lavazza3Resource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/Lavazza3Resource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\Lavazza3Resource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/Lavazza3Resource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\Lavazza3Resource\\Pages\\CreateLavazza3' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/Lavazza3Resource/Pages/CreateLavazza3.php',
-        'App\\Filament\\Admin\\Resources\\Lavazza3Resource\\Pages\\EditLavazza3' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/Lavazza3Resource/Pages/EditLavazza3.php',
-        'App\\Filament\\Admin\\Resources\\Lavazza3Resource\\Pages\\ListLavazza3s' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/Lavazza3Resource/Pages/ListLavazza3s.php',
-        'App\\Filament\\Admin\\Resources\\LavazzaResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/LavazzaResource.php',
-        'App\\Filament\\Admin\\Resources\\LavazzaResource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/LavazzaResource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\LavazzaResource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/LavazzaResource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\LavazzaResource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/LavazzaResource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\LavazzaResource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/LavazzaResource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\LavazzaResource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/LavazzaResource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\LavazzaResource\\Pages\\CreateLavazza' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/LavazzaResource/Pages/CreateLavazza.php',
-        'App\\Filament\\Admin\\Resources\\LavazzaResource\\Pages\\EditLavazza' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/LavazzaResource/Pages/EditLavazza.php',
-        'App\\Filament\\Admin\\Resources\\LavazzaResource\\Pages\\ListLavazzas' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/LavazzaResource/Pages/ListLavazzas.php',
-        'App\\Filament\\Admin\\Resources\\LinkYTRecipeIndexResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/LinkYTRecipeIndexResource.php',
-        'App\\Filament\\Admin\\Resources\\LinkYTRecipeIndexResource\\Pages\\CreateLinkYTRecipeIndex' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/LinkYTRecipeIndexResource/Pages/CreateLinkYTRecipeIndex.php',
-        'App\\Filament\\Admin\\Resources\\LinkYTRecipeIndexResource\\Pages\\EditLinkYTRecipeIndex' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/LinkYTRecipeIndexResource/Pages/EditLinkYTRecipeIndex.php',
-        'App\\Filament\\Admin\\Resources\\LinkYTRecipeIndexResource\\Pages\\ListLinkYTRecipeIndices' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/LinkYTRecipeIndexResource/Pages/ListLinkYTRecipeIndices.php',
-        'App\\Filament\\Admin\\Resources\\LinkYTResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/LinkYTResource.php',
-        'App\\Filament\\Admin\\Resources\\LinkYTResource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/LinkYTResource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\LinkYTResource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/LinkYTResource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\LinkYTResource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/LinkYTResource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\LinkYTResource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/LinkYTResource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\LinkYTResource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/LinkYTResource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\LinkYTResource\\Pages\\CreateLinkYT' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/LinkYTResource/Pages/CreateLinkYT.php',
-        'App\\Filament\\Admin\\Resources\\LinkYTResource\\Pages\\EditLinkYT' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/LinkYTResource/Pages/EditLinkYT.php',
-        'App\\Filament\\Admin\\Resources\\LinkYTResource\\Pages\\ListLinkYTS' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/LinkYTResource/Pages/ListLinkYTS.php',
-        'App\\Filament\\Admin\\Resources\\MilklabResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/MilklabResource.php',
-        'App\\Filament\\Admin\\Resources\\MilklabResource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/MilklabResource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\MilklabResource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/MilklabResource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\MilklabResource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/MilklabResource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\MilklabResource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/MilklabResource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\MilklabResource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/MilklabResource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\MilklabResource\\Pages\\CreateMilklab' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/MilklabResource/Pages/CreateMilklab.php',
-        'App\\Filament\\Admin\\Resources\\MilklabResource\\Pages\\EditMilklab' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/MilklabResource/Pages/EditMilklab.php',
-        'App\\Filament\\Admin\\Resources\\MilklabResource\\Pages\\ListMilklabs' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/MilklabResource/Pages/ListMilklabs.php',
-        'App\\Filament\\Admin\\Resources\\MoninResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/MoninResource.php',
-        'App\\Filament\\Admin\\Resources\\MoninResource\\Pages\\CreateMonin' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/MoninResource/Pages/CreateMonin.php',
-        'App\\Filament\\Admin\\Resources\\MoninResource\\Pages\\EditMonin' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/MoninResource/Pages/EditMonin.php',
-        'App\\Filament\\Admin\\Resources\\MoninResource\\Pages\\ListMonins' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/MoninResource/Pages/ListMonins.php',
-        'App\\Filament\\Admin\\Resources\\NewsIndexResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/NewsIndexResource.php',
-        'App\\Filament\\Admin\\Resources\\NewsIndexResource\\Pages\\CreateNewsIndex' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/NewsIndexResource/Pages/CreateNewsIndex.php',
-        'App\\Filament\\Admin\\Resources\\NewsIndexResource\\Pages\\EditNewsIndex' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/NewsIndexResource/Pages/EditNewsIndex.php',
-        'App\\Filament\\Admin\\Resources\\NewsIndexResource\\Pages\\ListNewsIndices' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/NewsIndexResource/Pages/ListNewsIndices.php',
-        'App\\Filament\\Admin\\Resources\\NoncreamerResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/NoncreamerResource.php',
-        'App\\Filament\\Admin\\Resources\\NoncreamerResource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/NoncreamerResource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\NoncreamerResource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/NoncreamerResource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\NoncreamerResource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/NoncreamerResource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\NoncreamerResource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/NoncreamerResource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\NoncreamerResource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/NoncreamerResource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\NoncreamerResource\\Pages\\CreateNoncreamer' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/NoncreamerResource/Pages/CreateNoncreamer.php',
-        'App\\Filament\\Admin\\Resources\\NoncreamerResource\\Pages\\EditNoncreamer' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/NoncreamerResource/Pages/EditNoncreamer.php',
-        'App\\Filament\\Admin\\Resources\\NoncreamerResource\\Pages\\ListNoncreamers' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/NoncreamerResource/Pages/ListNoncreamers.php',
-        'App\\Filament\\Admin\\Resources\\PressReleaseResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/PressReleaseResource.php',
-        'App\\Filament\\Admin\\Resources\\PressReleaseResource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/PressReleaseResource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\PressReleaseResource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/PressReleaseResource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\PressReleaseResource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/PressReleaseResource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\PressReleaseResource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/PressReleaseResource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\PressReleaseResource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/PressReleaseResource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\PressReleaseResource\\Pages\\CreatePressRelease' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/PressReleaseResource/Pages/CreatePressRelease.php',
-        'App\\Filament\\Admin\\Resources\\PressReleaseResource\\Pages\\EditPressRelease' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/PressReleaseResource/Pages/EditPressRelease.php',
-        'App\\Filament\\Admin\\Resources\\PressReleaseResource\\Pages\\ListPressReleases' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/PressReleaseResource/Pages/ListPressReleases.php',
-        'App\\Filament\\Admin\\Resources\\RecipeVideoResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/RecipeVideoResource.php',
-        'App\\Filament\\Admin\\Resources\\RecipeVideoResource\\Pages\\CreateRecipeVideo' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/RecipeVideoResource/Pages/CreateRecipeVideo.php',
-        'App\\Filament\\Admin\\Resources\\RecipeVideoResource\\Pages\\EditRecipeVideo' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/RecipeVideoResource/Pages/EditRecipeVideo.php',
-        'App\\Filament\\Admin\\Resources\\RecipeVideoResource\\Pages\\ListRecipeVideos' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/RecipeVideoResource/Pages/ListRecipeVideos.php',
-        'App\\Filament\\Admin\\Resources\\RecipeVideoYT02Resource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/RecipeVideoYT02Resource.php',
-        'App\\Filament\\Admin\\Resources\\RecipeVideoYT02Resource\\Pages\\CreateRecipeVideoYT02' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/RecipeVideoYT02Resource/Pages/CreateRecipeVideoYT02.php',
-        'App\\Filament\\Admin\\Resources\\RecipeVideoYT02Resource\\Pages\\EditRecipeVideoYT02' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/RecipeVideoYT02Resource/Pages/EditRecipeVideoYT02.php',
-        'App\\Filament\\Admin\\Resources\\RecipeVideoYT02Resource\\Pages\\ListRecipeVideoYT02S' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/RecipeVideoYT02Resource/Pages/ListRecipeVideoYT02S.php',
-        'App\\Filament\\Admin\\Resources\\RecipeVideoYTResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/RecipeVideoYTResource.php',
-        'App\\Filament\\Admin\\Resources\\RecipeVideoYTResource\\Pages\\CreateRecipeVideoYT' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/RecipeVideoYTResource/Pages/CreateRecipeVideoYT.php',
-        'App\\Filament\\Admin\\Resources\\RecipeVideoYTResource\\Pages\\EditRecipeVideoYT' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/RecipeVideoYTResource/Pages/EditRecipeVideoYT.php',
-        'App\\Filament\\Admin\\Resources\\RecipeVideoYTResource\\Pages\\ListRecipeVideoYTS' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/RecipeVideoYTResource/Pages/ListRecipeVideoYTS.php',
-        'App\\Filament\\Admin\\Resources\\SauceResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SauceResource.php',
-        'App\\Filament\\Admin\\Resources\\SauceResource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SauceResource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\SauceResource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SauceResource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\SauceResource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SauceResource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\SauceResource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SauceResource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\SauceResource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SauceResource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\SauceResource\\Pages\\CreateSauce' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SauceResource/Pages/CreateSauce.php',
-        'App\\Filament\\Admin\\Resources\\SauceResource\\Pages\\EditSauce' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SauceResource/Pages/EditSauce.php',
-        'App\\Filament\\Admin\\Resources\\SauceResource\\Pages\\ListSauces' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SauceResource/Pages/ListSauces.php',
-        'App\\Filament\\Admin\\Resources\\SizesNonCreamerResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SizesNonCreamerResource.php',
-        'App\\Filament\\Admin\\Resources\\SizesNonCreamerResource\\Pages\\CreateSizesNonCreamer' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SizesNonCreamerResource/Pages/CreateSizesNonCreamer.php',
-        'App\\Filament\\Admin\\Resources\\SizesNonCreamerResource\\Pages\\EditSizesNonCreamer' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SizesNonCreamerResource/Pages/EditSizesNonCreamer.php',
-        'App\\Filament\\Admin\\Resources\\SizesNonCreamerResource\\Pages\\ListSizesNonCreamers' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SizesNonCreamerResource/Pages/ListSizesNonCreamers.php',
-        'App\\Filament\\Admin\\Resources\\SliderIndexResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SliderIndexResource.php',
-        'App\\Filament\\Admin\\Resources\\SliderIndexResource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SliderIndexResource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\SliderIndexResource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SliderIndexResource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\SliderIndexResource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SliderIndexResource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\SliderIndexResource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SliderIndexResource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\SliderIndexResource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SliderIndexResource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\SliderIndexResource\\Pages\\CreateSliderIndex' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SliderIndexResource/Pages/CreateSliderIndex.php',
-        'App\\Filament\\Admin\\Resources\\SliderIndexResource\\Pages\\EditSliderIndex' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SliderIndexResource/Pages/EditSliderIndex.php',
-        'App\\Filament\\Admin\\Resources\\SliderIndexResource\\Pages\\ListSliderIndices' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SliderIndexResource/Pages/ListSliderIndices.php',
-        'App\\Filament\\Admin\\Resources\\SubProductResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SubProductResource.php',
-        'App\\Filament\\Admin\\Resources\\SubProductResource\\Pages\\CreateSubProduct' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SubProductResource/Pages/CreateSubProduct.php',
-        'App\\Filament\\Admin\\Resources\\SubProductResource\\Pages\\EditSubProduct' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SubProductResource/Pages/EditSubProduct.php',
-        'App\\Filament\\Admin\\Resources\\SubProductResource\\Pages\\ListSubProducts' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SubProductResource/Pages/ListSubProducts.php',
-        'App\\Filament\\Admin\\Resources\\SyrupResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SyrupResource.php',
-        'App\\Filament\\Admin\\Resources\\SyrupResource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SyrupResource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\SyrupResource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SyrupResource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\SyrupResource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SyrupResource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\SyrupResource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SyrupResource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\SyrupResource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SyrupResource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\SyrupResource\\Pages\\CreateSyrup' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SyrupResource/Pages/CreateSyrup.php',
-        'App\\Filament\\Admin\\Resources\\SyrupResource\\Pages\\EditSyrup' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SyrupResource/Pages/EditSyrup.php',
-        'App\\Filament\\Admin\\Resources\\SyrupResource\\Pages\\ListSyrups' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/SyrupResource/Pages/ListSyrups.php',
-        'App\\Filament\\Admin\\Resources\\TipsInner2Resource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/TipsInner2Resource.php',
-        'App\\Filament\\Admin\\Resources\\TipsInner2Resource\\Pages\\CreateTipsInner2' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/TipsInner2Resource/Pages/CreateTipsInner2.php',
-        'App\\Filament\\Admin\\Resources\\TipsInner2Resource\\Pages\\EditTipsInner2' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/TipsInner2Resource/Pages/EditTipsInner2.php',
-        'App\\Filament\\Admin\\Resources\\TipsInner2Resource\\Pages\\ListTipsInner2s' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/TipsInner2Resource/Pages/ListTipsInner2s.php',
-        'App\\Filament\\Admin\\Resources\\TipsInner3Resource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/TipsInner3Resource.php',
-        'App\\Filament\\Admin\\Resources\\TipsInner3Resource\\Pages\\CreateTipsInner3' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/TipsInner3Resource/Pages/CreateTipsInner3.php',
-        'App\\Filament\\Admin\\Resources\\TipsInner3Resource\\Pages\\EditTipsInner3' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/TipsInner3Resource/Pages/EditTipsInner3.php',
-        'App\\Filament\\Admin\\Resources\\TipsInner3Resource\\Pages\\ListTipsInner3s' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/TipsInner3Resource/Pages/ListTipsInner3s.php',
-        'App\\Filament\\Admin\\Resources\\TipsInnerResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/TipsInnerResource.php',
-        'App\\Filament\\Admin\\Resources\\TipsInnerResource\\Pages\\CreateTipsInner' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/TipsInnerResource/Pages/CreateTipsInner.php',
-        'App\\Filament\\Admin\\Resources\\TipsInnerResource\\Pages\\EditTipsInner' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/TipsInnerResource/Pages/EditTipsInner.php',
-        'App\\Filament\\Admin\\Resources\\TipsInnerResource\\Pages\\ListTipsInners' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/TipsInnerResource/Pages/ListTipsInners.php',
-        'App\\Filament\\Admin\\Resources\\TipsResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/TipsResource.php',
-        'App\\Filament\\Admin\\Resources\\TipsResource\\Pages\\CreateTips' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/TipsResource/Pages/CreateTips.php',
-        'App\\Filament\\Admin\\Resources\\TipsResource\\Pages\\EditTips' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/TipsResource/Pages/EditTips.php',
-        'App\\Filament\\Admin\\Resources\\TipsResource\\Pages\\ListTips' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/TipsResource/Pages/ListTips.php',
-        'App\\Filament\\Admin\\Resources\\TipsTitleResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/TipsTitleResource.php',
-        'App\\Filament\\Admin\\Resources\\TipsTitleResource\\Pages\\CreateTipsTitle' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/TipsTitleResource/Pages/CreateTipsTitle.php',
-        'App\\Filament\\Admin\\Resources\\TipsTitleResource\\Pages\\EditTipsTitle' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/TipsTitleResource/Pages/EditTipsTitle.php',
-        'App\\Filament\\Admin\\Resources\\TipsTitleResource\\Pages\\ListTipsTitles' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/TipsTitleResource/Pages/ListTipsTitles.php',
         'App\\Filament\\Admin\\Resources\\UserResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/UserResource.php',
         'App\\Filament\\Admin\\Resources\\UserResource\\Pages\\CreateUser' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/UserResource/Pages/CreateUser.php',
         'App\\Filament\\Admin\\Resources\\UserResource\\Pages\\EditUser' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/UserResource/Pages/EditUser.php',
         'App\\Filament\\Admin\\Resources\\UserResource\\Pages\\ListUsers' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/UserResource/Pages/ListUsers.php',
-        'App\\Filament\\Admin\\Resources\\VideoLocalIndexResource' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/VideoLocalIndexResource.php',
-        'App\\Filament\\Admin\\Resources\\VideoLocalIndexResource\\Api\\Handlers\\CreateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/VideoLocalIndexResource/Api/Handlers/CreateHandler.php',
-        'App\\Filament\\Admin\\Resources\\VideoLocalIndexResource\\Api\\Handlers\\DeleteHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/VideoLocalIndexResource/Api/Handlers/DeleteHandler.php',
-        'App\\Filament\\Admin\\Resources\\VideoLocalIndexResource\\Api\\Handlers\\DetailHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/VideoLocalIndexResource/Api/Handlers/DetailHandler.php',
-        'App\\Filament\\Admin\\Resources\\VideoLocalIndexResource\\Api\\Handlers\\PaginationHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/VideoLocalIndexResource/Api/Handlers/PaginationHandler.php',
-        'App\\Filament\\Admin\\Resources\\VideoLocalIndexResource\\Api\\Handlers\\UpdateHandler' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/VideoLocalIndexResource/Api/Handlers/UpdateHandler.php',
-        'App\\Filament\\Admin\\Resources\\VideoLocalIndexResource\\Pages\\CreateVideoLocalIndex' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/VideoLocalIndexResource/Pages/CreateVideoLocalIndex.php',
-        'App\\Filament\\Admin\\Resources\\VideoLocalIndexResource\\Pages\\EditVideoLocalIndex' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/VideoLocalIndexResource/Pages/EditVideoLocalIndex.php',
-        'App\\Filament\\Admin\\Resources\\VideoLocalIndexResource\\Pages\\ListVideoLocalIndices' => __DIR__ . '/../..' . '/app/Filament/Admin/Resources/VideoLocalIndexResource/Pages/ListVideoLocalIndices.php',
         'App\\Filament\\Admin\\Widgets\\LatestAccessLogs' => __DIR__ . '/../..' . '/app/Filament/Admin/Widgets/LatestAccessLogs.php',
+        'App\\Http\\Controllers\\Api\\InventoryController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/InventoryController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
-        'App\\Http\\Controllers\\FrontendController' => __DIR__ . '/../..' . '/app/Http/Controllers/FrontendController.php',
-        'App\\Models\\AnnualReport' => __DIR__ . '/../..' . '/app/Models/AnnualReport.php',
-        'App\\Models\\CSRInformation' => __DIR__ . '/../..' . '/app/Models/CSRInformation.php',
-        'App\\Models\\Category' => __DIR__ . '/../..' . '/app/Models/Category.php',
-        'App\\Models\\CompanysDisclosure' => __DIR__ . '/../..' . '/app/Models/CompanysDisclosure.php',
-        'App\\Models\\CompanysProspectus' => __DIR__ . '/../..' . '/app/Models/CompanysProspectus.php',
-        'App\\Models\\Creamer' => __DIR__ . '/../..' . '/app/Models/Creamer.php',
-        'App\\Models\\DescribeCompIndex' => __DIR__ . '/../..' . '/app/Models/DescribeCompIndex.php',
-        'App\\Models\\FAQBobaking' => __DIR__ . '/../..' . '/app/Models/FAQBobaking.php',
-        'App\\Models\\FAQIpilot' => __DIR__ . '/../..' . '/app/Models/FAQIpilot.php',
-        'App\\Models\\FAQJTC' => __DIR__ . '/../..' . '/app/Models/FAQJTC.php',
-        'App\\Models\\FAQLavazza' => __DIR__ . '/../..' . '/app/Models/FAQLavazza.php',
-        'App\\Models\\FAQMilklab' => __DIR__ . '/../..' . '/app/Models/FAQMilklab.php',
-        'App\\Models\\FAQMonin' => __DIR__ . '/../..' . '/app/Models/FAQMonin.php',
-        'App\\Models\\FAQSantino' => __DIR__ . '/../..' . '/app/Models/FAQSantino.php',
-        'App\\Models\\FAQStrawme' => __DIR__ . '/../..' . '/app/Models/FAQStrawme.php',
-        'App\\Models\\FinancialReport' => __DIR__ . '/../..' . '/app/Models/FinancialReport.php',
-        'App\\Models\\Frappe' => __DIR__ . '/../..' . '/app/Models/Frappe.php',
-        'App\\Models\\Fruitmix' => __DIR__ . '/../..' . '/app/Models/Fruitmix.php',
-        'App\\Models\\GeneralMeeting' => __DIR__ . '/../..' . '/app/Models/GeneralMeeting.php',
-        'App\\Models\\IPilot' => __DIR__ . '/../..' . '/app/Models/IPilot.php',
-        'App\\Models\\IPilot2' => __DIR__ . '/../..' . '/app/Models/IPilot2.php',
-        'App\\Models\\IPilot3' => __DIR__ . '/../..' . '/app/Models/IPilot3.php',
-        'App\\Models\\IPilot4' => __DIR__ . '/../..' . '/app/Models/IPilot4.php',
-        'App\\Models\\IPilot5' => __DIR__ . '/../..' . '/app/Models/IPilot5.php',
-        'App\\Models\\IPilot6' => __DIR__ . '/../..' . '/app/Models/IPilot6.php',
-        'App\\Models\\IPilot7' => __DIR__ . '/../..' . '/app/Models/IPilot7.php',
-        'App\\Models\\InfoIndex' => __DIR__ . '/../..' . '/app/Models/InfoIndex.php',
-        'App\\Models\\InstaFeed' => __DIR__ . '/../..' . '/app/Models/InstaFeed.php',
-        'App\\Models\\InstaFeed2' => __DIR__ . '/../..' . '/app/Models/InstaFeed2.php',
-        'App\\Models\\InstaLayout' => __DIR__ . '/../..' . '/app/Models/InstaLayout.php',
-        'App\\Models\\JTCBlender' => __DIR__ . '/../..' . '/app/Models/JTCBlender.php',
-        'App\\Models\\JTCBlender2' => __DIR__ . '/../..' . '/app/Models/JTCBlender2.php',
-        'App\\Models\\JTCBlender3' => __DIR__ . '/../..' . '/app/Models/JTCBlender3.php',
-        'App\\Models\\Lavazza' => __DIR__ . '/../..' . '/app/Models/Lavazza.php',
-        'App\\Models\\Lavazza2' => __DIR__ . '/../..' . '/app/Models/Lavazza2.php',
-        'App\\Models\\Lavazza3' => __DIR__ . '/../..' . '/app/Models/Lavazza3.php',
-        'App\\Models\\LinkYT' => __DIR__ . '/../..' . '/app/Models/LinkYT.php',
-        'App\\Models\\LinkYTRecipeIndex' => __DIR__ . '/../..' . '/app/Models/LinkYTRecipeIndex.php',
-        'App\\Models\\Milklab' => __DIR__ . '/../..' . '/app/Models/Milklab.php',
-        'App\\Models\\Monin' => __DIR__ . '/../..' . '/app/Models/Monin.php',
-        'App\\Models\\NewsIndex' => __DIR__ . '/../..' . '/app/Models/NewsIndex.php',
-        'App\\Models\\Noncreamer' => __DIR__ . '/../..' . '/app/Models/Noncreamer.php',
-        'App\\Models\\PressRelease' => __DIR__ . '/../..' . '/app/Models/PressRelease.php',
-        'App\\Models\\RecipeVideo' => __DIR__ . '/../..' . '/app/Models/RecipeVideo.php',
-        'App\\Models\\RecipeVideoYT' => __DIR__ . '/../..' . '/app/Models/RecipeVideoYT.php',
-        'App\\Models\\RecipeVideoYT02' => __DIR__ . '/../..' . '/app/Models/RecipeVideoYT02.php',
-        'App\\Models\\Sauce' => __DIR__ . '/../..' . '/app/Models/Sauce.php',
-        'App\\Models\\SizesNonCreamer' => __DIR__ . '/../..' . '/app/Models/SizesNonCreamer.php',
-        'App\\Models\\SliderIndex' => __DIR__ . '/../..' . '/app/Models/SliderIndex.php',
-        'App\\Models\\SubProduct' => __DIR__ . '/../..' . '/app/Models/SubProduct.php',
-        'App\\Models\\Syrup' => __DIR__ . '/../..' . '/app/Models/Syrup.php',
-        'App\\Models\\Tips' => __DIR__ . '/../..' . '/app/Models/Tips.php',
-        'App\\Models\\TipsInner' => __DIR__ . '/../..' . '/app/Models/TipsInner.php',
-        'App\\Models\\TipsInner2' => __DIR__ . '/../..' . '/app/Models/TipsInner2.php',
-        'App\\Models\\TipsInner3' => __DIR__ . '/../..' . '/app/Models/TipsInner3.php',
-        'App\\Models\\TipsTitle' => __DIR__ . '/../..' . '/app/Models/TipsTitle.php',
+        'App\\Models\\Inventory' => __DIR__ . '/../..' . '/app/Models/Inventory.php',
+        'App\\Models\\Product' => __DIR__ . '/../..' . '/app/Models/Product.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
-        'App\\Models\\VideoLocalIndex' => __DIR__ . '/../..' . '/app/Models/VideoLocalIndex.php',
         'App\\Policies\\ActivityPolicy' => __DIR__ . '/../..' . '/app/Policies/ActivityPolicy.php',
-        'App\\Policies\\AnnualReportPolicy' => __DIR__ . '/../..' . '/app/Policies/AnnualReportPolicy.php',
-        'App\\Policies\\CSRInformationPolicy' => __DIR__ . '/../..' . '/app/Policies/CSRInformationPolicy.php',
-        'App\\Policies\\CategoryPolicy' => __DIR__ . '/../..' . '/app/Policies/CategoryPolicy.php',
-        'App\\Policies\\CompanysDisclosurePolicy' => __DIR__ . '/../..' . '/app/Policies/CompanysDisclosurePolicy.php',
-        'App\\Policies\\CompanysProspectusPolicy' => __DIR__ . '/../..' . '/app/Policies/CompanysProspectusPolicy.php',
-        'App\\Policies\\CreamerPolicy' => __DIR__ . '/../..' . '/app/Policies/CreamerPolicy.php',
-        'App\\Policies\\DescribeCompIndexPolicy' => __DIR__ . '/../..' . '/app/Policies/DescribeCompIndexPolicy.php',
-        'App\\Policies\\FAQBobakingPolicy' => __DIR__ . '/../..' . '/app/Policies/FAQBobakingPolicy.php',
-        'App\\Policies\\FAQIpilotPolicy' => __DIR__ . '/../..' . '/app/Policies/FAQIpilotPolicy.php',
-        'App\\Policies\\FAQJTCPolicy' => __DIR__ . '/../..' . '/app/Policies/FAQJTCPolicy.php',
-        'App\\Policies\\FAQLavazzaPolicy' => __DIR__ . '/../..' . '/app/Policies/FAQLavazzaPolicy.php',
-        'App\\Policies\\FAQMilklabPolicy' => __DIR__ . '/../..' . '/app/Policies/FAQMilklabPolicy.php',
-        'App\\Policies\\FAQMoninPolicy' => __DIR__ . '/../..' . '/app/Policies/FAQMoninPolicy.php',
-        'App\\Policies\\FAQSantinoPolicy' => __DIR__ . '/../..' . '/app/Policies/FAQSantinoPolicy.php',
-        'App\\Policies\\FAQStrawmePolicy' => __DIR__ . '/../..' . '/app/Policies/FAQStrawmePolicy.php',
-        'App\\Policies\\FinancialReportPolicy' => __DIR__ . '/../..' . '/app/Policies/FinancialReportPolicy.php',
-        'App\\Policies\\FrappePolicy' => __DIR__ . '/../..' . '/app/Policies/FrappePolicy.php',
-        'App\\Policies\\FruitmixPolicy' => __DIR__ . '/../..' . '/app/Policies/FruitmixPolicy.php',
-        'App\\Policies\\GeneralMeetingPolicy' => __DIR__ . '/../..' . '/app/Policies/GeneralMeetingPolicy.php',
-        'App\\Policies\\IPilot2Policy' => __DIR__ . '/../..' . '/app/Policies/IPilot2Policy.php',
-        'App\\Policies\\IPilot3Policy' => __DIR__ . '/../..' . '/app/Policies/IPilot3Policy.php',
-        'App\\Policies\\IPilot4Policy' => __DIR__ . '/../..' . '/app/Policies/IPilot4Policy.php',
-        'App\\Policies\\IPilot5Policy' => __DIR__ . '/../..' . '/app/Policies/IPilot5Policy.php',
-        'App\\Policies\\IPilot6Policy' => __DIR__ . '/../..' . '/app/Policies/IPilot6Policy.php',
-        'App\\Policies\\IPilot7Policy' => __DIR__ . '/../..' . '/app/Policies/IPilot7Policy.php',
-        'App\\Policies\\IPilotPolicy' => __DIR__ . '/../..' . '/app/Policies/IPilotPolicy.php',
-        'App\\Policies\\InfoIndexPolicy' => __DIR__ . '/../..' . '/app/Policies/InfoIndexPolicy.php',
-        'App\\Policies\\InstaFeed2Policy' => __DIR__ . '/../..' . '/app/Policies/InstaFeed2Policy.php',
-        'App\\Policies\\InstaFeedPolicy' => __DIR__ . '/../..' . '/app/Policies/InstaFeedPolicy.php',
-        'App\\Policies\\InstaLayoutPolicy' => __DIR__ . '/../..' . '/app/Policies/InstaLayoutPolicy.php',
-        'App\\Policies\\JTCBlender2Policy' => __DIR__ . '/../..' . '/app/Policies/JTCBlender2Policy.php',
-        'App\\Policies\\JTCBlender3Policy' => __DIR__ . '/../..' . '/app/Policies/JTCBlender3Policy.php',
-        'App\\Policies\\JTCBlenderPolicy' => __DIR__ . '/../..' . '/app/Policies/JTCBlenderPolicy.php',
-        'App\\Policies\\Lavazza2Policy' => __DIR__ . '/../..' . '/app/Policies/Lavazza2Policy.php',
-        'App\\Policies\\Lavazza3Policy' => __DIR__ . '/../..' . '/app/Policies/Lavazza3Policy.php',
-        'App\\Policies\\LavazzaPolicy' => __DIR__ . '/../..' . '/app/Policies/LavazzaPolicy.php',
-        'App\\Policies\\LinkYTPolicy' => __DIR__ . '/../..' . '/app/Policies/LinkYTPolicy.php',
-        'App\\Policies\\LinkYTRecipeIndexPolicy' => __DIR__ . '/../..' . '/app/Policies/LinkYTRecipeIndexPolicy.php',
-        'App\\Policies\\MilklabPolicy' => __DIR__ . '/../..' . '/app/Policies/MilklabPolicy.php',
-        'App\\Policies\\MoninPolicy' => __DIR__ . '/../..' . '/app/Policies/MoninPolicy.php',
-        'App\\Policies\\NewsIndexPolicy' => __DIR__ . '/../..' . '/app/Policies/NewsIndexPolicy.php',
-        'App\\Policies\\NoncreamerPolicy' => __DIR__ . '/../..' . '/app/Policies/NoncreamerPolicy.php',
-        'App\\Policies\\PressReleasePolicy' => __DIR__ . '/../..' . '/app/Policies/PressReleasePolicy.php',
-        'App\\Policies\\ProductPolicy' => __DIR__ . '/../..' . '/app/Policies/ProductPolicy.php',
-        'App\\Policies\\RecipeVideoPolicy' => __DIR__ . '/../..' . '/app/Policies/RecipeVideoPolicy.php',
-        'App\\Policies\\RecipeVideoYT02Policy' => __DIR__ . '/../..' . '/app/Policies/RecipeVideoYT02Policy.php',
-        'App\\Policies\\RecipeVideoYTPolicy' => __DIR__ . '/../..' . '/app/Policies/RecipeVideoYTPolicy.php',
         'App\\Policies\\RolePolicy' => __DIR__ . '/../..' . '/app/Policies/RolePolicy.php',
-        'App\\Policies\\SaucePolicy' => __DIR__ . '/../..' . '/app/Policies/SaucePolicy.php',
-        'App\\Policies\\SizesNonCreamerPolicy' => __DIR__ . '/../..' . '/app/Policies/SizesNonCreamerPolicy.php',
-        'App\\Policies\\SliderIndexPolicy' => __DIR__ . '/../..' . '/app/Policies/SliderIndexPolicy.php',
-        'App\\Policies\\SubProductPolicy' => __DIR__ . '/../..' . '/app/Policies/SubProductPolicy.php',
-        'App\\Policies\\SyrupPolicy' => __DIR__ . '/../..' . '/app/Policies/SyrupPolicy.php',
-        'App\\Policies\\TipsInner2Policy' => __DIR__ . '/../..' . '/app/Policies/TipsInner2Policy.php',
-        'App\\Policies\\TipsInner3Policy' => __DIR__ . '/../..' . '/app/Policies/TipsInner3Policy.php',
-        'App\\Policies\\TipsInnerPolicy' => __DIR__ . '/../..' . '/app/Policies/TipsInnerPolicy.php',
-        'App\\Policies\\TipsPolicy' => __DIR__ . '/../..' . '/app/Policies/TipsPolicy.php',
-        'App\\Policies\\TipsTitlePolicy' => __DIR__ . '/../..' . '/app/Policies/TipsTitlePolicy.php',
         'App\\Policies\\TokenPolicy' => __DIR__ . '/../..' . '/app/Policies/TokenPolicy.php',
         'App\\Policies\\UserPolicy' => __DIR__ . '/../..' . '/app/Policies/UserPolicy.php',
-        'App\\Policies\\VideoLocalIndexPolicy' => __DIR__ . '/../..' . '/app/Policies/VideoLocalIndexPolicy.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\Filament\\AdminPanelProvider' => __DIR__ . '/../..' . '/app/Providers/Filament/AdminPanelProvider.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',

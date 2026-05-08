@@ -1,0 +1,68 @@
+@startuml
+top to bottom direction
+skinparam monochrome true
+skinparam shadowing false
+skinparam packageStyle rectangle
+
+actor "Unit Produksi" as Produksi
+actor "Runner" as Runner
+actor "Manager" as Manager
+
+rectangle "Sistem Manajemen Inventori Break.co" {
+
+  (Login) as UC_Login
+
+  (Cek Stok Bahan Baku) as UC_CekStokBB
+  (Ajukan Pembelian Bahan Baku) as UC_AjukanBB
+  (Input Laporan Produksi) as UC_LapProduksi
+  (Lihat Status Persetujuan) as UC_Status
+
+  (Input Laporan Berangkat) as UC_Berangkat
+  (Input Produk Dibawa) as UC_InputDibawa
+  (Input Laporan Pulang) as UC_Pulang
+  (Input Produk Sisa) as UC_InputSisa
+
+  (Verifikasi Pengajuan Pembelian) as UC_VerifBB
+  (Verifikasi Laporan Produksi) as UC_VerifProd
+  (Verifikasi Laporan Berangkat) as UC_VerifBerangkat
+  (Verifikasi Laporan Pulang) as UC_VerifPulang
+
+  (Lihat Laporan Stok & Penjualan) as UC_Laporan
+  (Logout) as UC_Logout
+}
+
+'========================
+' AKTOR KIRI (Produksi & Runner)
+'========================
+Produksi -left-> UC_Login
+Produksi -left-> UC_CekStokBB
+Produksi -left-> UC_AjukanBB
+Produksi -left-> UC_LapProduksi
+Produksi -left-> UC_Status
+Produksi -left-> UC_Logout
+
+Runner -left-> UC_Login
+Runner -left-> UC_Berangkat
+Runner -left-> UC_InputDibawa
+Runner -left-> UC_Pulang
+Runner -left-> UC_InputSisa
+Runner -left-> UC_Logout
+
+'========================
+' AKTOR KANAN (Manager)
+'========================
+Manager -right-> UC_Login
+Manager -right-> UC_VerifBB
+Manager -right-> UC_VerifProd
+Manager -right-> UC_VerifBerangkat
+Manager -right-> UC_VerifPulang
+Manager -right-> UC_Laporan
+Manager -right-> UC_Logout
+
+'========================
+' INCLUDE
+'========================
+UC_Berangkat ..> UC_InputDibawa : <<include>>
+UC_Pulang ..> UC_InputSisa : <<include>>
+
+@enduml

@@ -1,4 +1,4 @@
-import 'package:apps_break/pages/welcome.dart' show  WelcomePage;
+import 'package:apps_break/features/auth/presentation/pages/welcome.dart';
 import 'package:flutter/material.dart';
 
 void main() {

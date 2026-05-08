@@ -1,0 +1,167 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+hide empty members
+
+'========================
+' ENUMS
+'========================
+enum Role {
+  PRODUKSI
+  RUNNER
+  MANAGER
+}
+
+enum StatusPengajuan {
+  DIAJUKAN
+  DISETUJUI
+  DITOLAK
+}
+
+enum StatusVerifikasi {
+  MENUNGGU
+  DISETUJUI
+  DITOLAK
+}
+
+'========================
+' USER / ROLE
+'========================
+class User {
+  +userId: int
+  +nama: string
+  +username: string
+  +passwordHash: string
+  +role: Role
+}
+
+'========================
+' BAHAN BAKU & FIFO (BATCH)
+'========================
+class BahanBaku {
+  +bahanId: int
+  +nama: string
+  +satuan: string
+  +stokMinimum: double
+}
+
+class BatchBahanBaku {
+  +batchId: int
+  +tanggalMasuk: date
+  +tanggalKadaluarsa: date
+  +jumlahMasuk: double
+  +sisaStok: double
+}
+
+BahanBaku "1" o-- "1..*" BatchBahanBaku : memiliki >
+
+'========================
+' PRODUK JADI & BATCH PRODUK
+'========================
+class Produk {
+  +produkId: int
+  +nama: string
+  +satuan: string
+  +umurSimpanHari: int
+}
+
+class BatchProduk {
+  +batchProdukId: int
+  +tanggalProduksi: date
+  +tanggalKadaluarsa: date
+  +jumlahProduksi: int
+  +sisaStok: int
+  +lokasiSimpan: string
+}
+
+Produk "1" o-- "1..*" BatchProduk : memiliki >
+
+'========================
+' PENGAJUAN PEMBELIAN
+'========================
+class PengajuanPembelian {
+  +pengajuanId: int
+  +tanggal: datetime
+  +status: StatusPengajuan
+  +catatan: string
+}
+
+class DetailPengajuanPembelian {
+  +detailId: int
+  +jumlah: double
+}
+
+PengajuanPembelian "1" o-- "1..*" DetailPengajuanPembelian : terdiri dari >
+DetailPengajuanPembelian "*" --> "1" BahanBaku : bahan >
+
+User "1" <-- "0..*" PengajuanPembelian : dibuatOleh
+User "0..1" <-- "0..*" PengajuanPembelian : disetujuiOleh
+
+'========================
+' LAPORAN PRODUKSI
+'========================
+class LaporanProduksi {
+  +laporanProduksiId: int
+  +tanggal: datetime
+  +status: StatusVerifikasi
+}
+
+class DetailLaporanProduksi {
+  +detailId: int
+  +jumlah: int
+}
+
+LaporanProduksi "1" o-- "1..*" DetailLaporanProduksi : terdiri dari >
+DetailLaporanProduksi "*" --> "1" BatchProduk : batchProduk >
+
+User "1" <-- "0..*" LaporanProduksi : dibuatOleh
+User "0..1" <-- "0..*" LaporanProduksi : diverifikasiOleh
+
+'========================
+' GEROBak & STOK GEROBak
+'========================
+class Gerobak {
+  +gerobakId: int
+  +namaGerobak: string
+}
+
+class StokGerobak {
+  +stokGerobakId: int
+  +qty: int
+}
+
+Gerobak "1" o-- "0..*" StokGerobak : memiliki >
+StokGerobak "*" --> "1" BatchProduk : batchProduk >
+User "1" <-- "0..*" Gerobak : runner
+
+'========================
+' LAPORAN RUNNER (BERANGKAT / PULANG)
+'========================
+abstract class LaporanRunner {
+  +laporanRunnerId: int
+  +tanggal: datetime
+  +status: StatusVerifikasi
+}
+
+class LaporanBerangkat
+class LaporanPulang
+
+LaporanRunner <|-- LaporanBerangkat
+LaporanRunner <|-- LaporanPulang
+
+class DetailLaporanRunner {
++detailId: int
++jumlah: int
+}
+
+LaporanRunner "1" o-- "1..*" DetailLaporanRunner : terdiri dari >
+DetailLaporanRunner "*" --> "1" BatchProduk : batchProduk >
+
+User "1" <-- "0..*" LaporanRunner : runner
+User "0..1" <-- "0..*" LaporanRunner : diverifikasiOleh
+
+' Optional: hubungan logis (tanpa implementasi langsung)
+LaporanBerangkat ..> StokGerobak : update stok gerobak
+LaporanPulang ..> StokGerobak : update stok gerobak
+
+@enduml

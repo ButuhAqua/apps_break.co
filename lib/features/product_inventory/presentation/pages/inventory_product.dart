@@ -1,0 +1,186 @@
+// inventory_product.dart
+import 'package:flutter/material.dart';
+
+import 'package:apps_break/features/product_inventory/presentation/pages/inventory_pA.dart';
+import 'package:apps_break/features/product_inventory/presentation/pages/inventory_pB.dart';
+import 'package:apps_break/features/product_inventory/presentation/pages/inventory_basecamp.dart';
+
+class InventoryProductPage extends StatefulWidget {
+  const InventoryProductPage({super.key});
+
+  @override
+  State<InventoryProductPage> createState() => _InventoryProductPageState();
+}
+
+class _InventoryProductPageState extends State<InventoryProductPage> {
+  static const Color kPrimary = Color(0xFFD32F2F);
+  static const Color kBg = Colors.white;
+  static const Color kText = Color(0xFF212121);
+  static const Color kMuted = Color(0xFF616161);
+  static const Color kBorder = Color(0xFFE0E0E0);
+
+  @override
+  Widget build(BuildContext context) {
+    final cards = [
+      _ProductCard(
+        title: 'Basecamp',
+        subtitle: 'Lihat & kelola stok di Basecamp',
+        icon: Icons.store_rounded,
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (_) => const InventoryBasecampPage()),
+          );
+        },
+      ),
+      _ProductCard(
+        title: 'Gerobak A',
+        subtitle: 'Lihat & kelola produk di Gerobak A',
+        icon: Icons.shopping_cart_rounded,
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (_) => const InventoryGerobakAPage()),
+          );
+        },
+      ),
+      _ProductCard(
+        title: 'Gerobak B',
+        subtitle: 'Lihat & kelola produk di Gerobak B',
+        icon: Icons.shopping_cart_rounded,
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (_) => const InventoryGerobakBPage()),
+          );
+        },
+      ),
+    ];
+
+    return Scaffold(
+      backgroundColor: kBg,
+      appBar: AppBar(
+        title: const Text('Inventory Produk'),
+        backgroundColor: kPrimary,
+        foregroundColor: Colors.white,
+        centerTitle: true,
+        elevation: 0,
+      ),
+      body: SafeArea(
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            final isWide = constraints.maxWidth >= 520;
+            if (isWide) {
+              return Padding(
+                padding: const EdgeInsets.all(20),
+                child: GridView.builder(
+                  itemCount: cards.length,
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    crossAxisSpacing: 16,
+                    mainAxisSpacing: 16,
+                    mainAxisExtent: 140,
+                  ),
+                  itemBuilder: (_, i) => cards[i],
+                ),
+              );
+            }
+            return ListView.separated(
+              padding: const EdgeInsets.all(20),
+              itemCount: cards.length,
+              separatorBuilder: (_, __) => const SizedBox(height: 16),
+              itemBuilder: (_, i) => cards[i],
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+
+class _ProductCard extends StatelessWidget {
+  const _ProductCard({
+    required this.title,
+    required this.subtitle,
+    required this.icon,
+    required this.onTap,
+  });
+
+  final String title;
+  final String subtitle;
+  final IconData icon;
+  final VoidCallback onTap;
+
+  static const Color kPrimary = Color(0xFFD32F2F);
+  static const Color kText = Color(0xFF212121);
+  static const Color kMuted = Color(0xFF616161);
+  static const Color kBorder = Color(0xFFE0E0E0);
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: Colors.white,
+      elevation: 10,
+      shadowColor: const Color(0x1A000000),
+      borderRadius: BorderRadius.circular(18),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(18),
+        onTap: onTap,
+        child: Container(
+          height: 140,
+          padding: const EdgeInsets.all(20),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(18),
+            border: Border.all(color: kBorder),
+          ),
+          child: Row(
+            children: [
+              Container(
+                width: 68,
+                height: 68,
+                decoration: BoxDecoration(
+                  color: kPrimary.withOpacity(0.10),
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: Icon(icon, size: 34, color: kPrimary),
+              ),
+              const SizedBox(width: 16),
+              Expanded(
+                child: DefaultTextStyle(
+                  style: const TextStyle(color: kText),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        title,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+                      const SizedBox(height: 6),
+                      Text(
+                        subtitle,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                          fontSize: 13,
+                          color: kMuted,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              const SizedBox(width: 8),
+              const Icon(Icons.arrow_forward_rounded, color: kPrimary),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
