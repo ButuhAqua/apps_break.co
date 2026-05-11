@@ -1,0 +1,163 @@
+import 'dart:convert';
+
+import 'package:http/http.dart' as http;
+
+class ApprovalRemoteDataSource {
+  final String baseUrl = 'http://localhost/api';
+
+  Future<void> approveRawMaterialRequest({
+    required String token,
+    required int requestId,
+  }) async {
+    final response = await http.post(
+      Uri.parse('$baseUrl/raw-material-requests/$requestId/approve'),
+      headers: {
+        'Accept': 'application/json',
+        'Authorization': 'Bearer $token',
+      },
+    );
+
+    if (response.statusCode != 200) {
+      throw Exception('Gagal approve pengajuan: ${response.body}');
+    }
+  }
+
+  Future<void> rejectRawMaterialRequest({
+    required String token,
+    required int requestId,
+    String? reason,
+  }) async {
+    final response = await http.post(
+      Uri.parse('$baseUrl/raw-material-requests/$requestId/reject'),
+      headers: {
+        'Accept': 'application/json',
+        'Authorization': 'Bearer $token',
+        'Content-Type': 'application/json',
+      },
+      body: jsonEncode({
+        'reason': reason ?? '',
+      }),
+    );
+
+    if (response.statusCode != 200) {
+      throw Exception('Gagal reject pengajuan: ${response.body}');
+    }
+  }
+
+  Future<void> approveProductionReport({
+    required String token,
+    required int reportId,
+  }) async {
+    final response = await http.post(
+      Uri.parse('$baseUrl/production-reports/$reportId/approve'),
+      headers: {
+        'Accept': 'application/json',
+        'Authorization': 'Bearer $token',
+      },
+    );
+
+    if (response.statusCode != 200) {
+      throw Exception('Gagal approve laporan produksi: ${response.body}');
+    }
+  }
+
+  Future<void> rejectProductionReport({
+    required String token,
+    required int reportId,
+    String? reason,
+  }) async {
+    final response = await http.post(
+      Uri.parse('$baseUrl/production-reports/$reportId/reject'),
+      headers: {
+        'Accept': 'application/json',
+        'Authorization': 'Bearer $token',
+        'Content-Type': 'application/json',
+      },
+      body: jsonEncode({
+        'reason': reason ?? '',
+      }),
+    );
+
+    if (response.statusCode != 200) {
+      throw Exception('Gagal reject laporan produksi: ${response.body}');
+    }
+  }
+
+  Future<void> approveDepartureTrip({
+    required String token,
+    required int tripId,
+  }) async {
+    final response = await http.post(
+      Uri.parse('$baseUrl/runner-trips/$tripId/approve-departure'),
+      headers: {
+        'Accept': 'application/json',
+        'Authorization': 'Bearer $token',
+      },
+    );
+
+    if (response.statusCode != 200) {
+      throw Exception('Gagal approve laporan berangkat: ${response.body}');
+    }
+  }
+
+  Future<void> rejectDepartureTrip({
+    required String token,
+    required int tripId,
+    String? reason,
+  }) async {
+    final response = await http.post(
+      Uri.parse('$baseUrl/runner-trips/$tripId/reject-departure'),
+      headers: {
+        'Accept': 'application/json',
+        'Authorization': 'Bearer $token',
+        'Content-Type': 'application/json',
+      },
+      body: jsonEncode({
+        'reason': reason ?? '',
+      }),
+    );
+
+    if (response.statusCode != 200) {
+      throw Exception('Gagal reject laporan berangkat: ${response.body}');
+    }
+  }
+
+  Future<void> approveReturnTrip({
+    required String token,
+    required int tripId,
+  }) async {
+    final response = await http.post(
+      Uri.parse('$baseUrl/runner-trips/$tripId/approve-return'),
+      headers: {
+        'Accept': 'application/json',
+        'Authorization': 'Bearer $token',
+      },
+    );
+
+    if (response.statusCode != 200) {
+      throw Exception('Gagal approve laporan pulang: ${response.body}');
+    }
+  }
+
+  Future<void> rejectReturnTrip({
+    required String token,
+    required int tripId,
+    String? reason,
+  }) async {
+    final response = await http.post(
+      Uri.parse('$baseUrl/runner-trips/$tripId/reject-return'),
+      headers: {
+        'Accept': 'application/json',
+        'Authorization': 'Bearer $token',
+        'Content-Type': 'application/json',
+      },
+      body: jsonEncode({
+        'reason': reason ?? '',
+      }),
+    );
+
+    if (response.statusCode != 200) {
+      throw Exception('Gagal reject laporan pulang: ${response.body}');
+    }
+  }
+}

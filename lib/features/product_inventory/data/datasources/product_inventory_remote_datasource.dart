@@ -24,6 +24,7 @@ class ProductInventoryRemoteDataSource {
       return data.map((e) {
         return ProductInventoryItem(
           id: e['id'].toString(),
+          productId: e['product_id'].toString(),
           name: e['name'] ?? '',
           sku: e['sku'] ?? '',
           uom: e['uom'] ?? '',

@@ -20,6 +20,7 @@ class InventoryController extends Controller
             $data->map(function ($item) {
                 return [
                     'id' => $item->id,
+                    'product_id' => $item->product_id,
                     'name' => $item->product->name,
                     'sku' => $item->product->sku,
                     'uom' => $item->product->uom,

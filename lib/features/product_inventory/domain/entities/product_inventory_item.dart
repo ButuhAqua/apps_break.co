@@ -1,5 +1,6 @@
 class ProductInventoryItem {
   final String id;
+  final String productId;
   final String name;
   final String sku;
   final String uom;
@@ -10,6 +11,7 @@ class ProductInventoryItem {
 
   const ProductInventoryItem({
     required this.id,
+    required this.productId,
     required this.name,
     required this.sku,
     required this.uom,

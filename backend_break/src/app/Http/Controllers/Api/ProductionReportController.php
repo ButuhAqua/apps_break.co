@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\ProductionReport;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\Inventory;
+use App\Models\ProductStockMovement;
 
 class ProductionReportController extends Controller
 {
@@ -108,5 +110,104 @@ class ProductionReportController extends Controller
         } while (ProductionReport::where('report_number', $reportNumber)->exists());
 
         return $reportNumber;
+    }
+    public function approve(
+        Request $request,
+        ProductionReport $productionReport
+    ) {
+        $user = $request->user()->load('employee');
+    
+        $allowedRoles = ['Manager', 'Owner', 'Admin'];
+    
+        if (!in_array($user->employee?->role, $allowedRoles)) {
+            return response()->json([
+                'message' => 'Tidak memiliki akses approval'
+            ], 403);
+        }
+    
+        if ($productionReport->status === 'Disetujui') {
+            return response()->json([
+                'message' => 'Laporan sudah disetujui'
+            ], 422);
+        }
+    
+        DB::beginTransaction();
+    
+        try {
+            $productionReport->load('finishedProducts.product');
+    
+            $productionReport->update([
+                'status' => 'Disetujui',
+            ]);
+    
+            foreach ($productionReport->finishedProducts as $item) {
+                $inventory = Inventory::firstOrCreate(
+                    [
+                        'product_id' => $item->product_id,
+                        'location' => 'Basecamp',
+                    ],
+                    [
+                        'stock' => 0,
+                    ]
+                );
+    
+                $inventory->increment('stock', $item->qty);
+    
+                ProductStockMovement::create([
+                    'product_id' => $item->product_id,
+                    'type' => 'IN',
+                    'qty' => $item->qty,
+                    'uom' => $item->uom,
+                    'from_location' => null,
+                    'to_location' => 'Basecamp',
+                    'reference_type' => ProductionReport::class,
+                    'reference_id' => $productionReport->id,
+                    'notes' => 'Produk masuk otomatis dari approval laporan produksi #' . $productionReport->id,
+                    'user_id' => $user->id,
+                ]);
+            }
+    
+            DB::commit();
+    
+            return response()->json([
+                'message' => 'Laporan produksi berhasil disetujui',
+            ]);
+        } catch (\Throwable $e) {
+            DB::rollBack();
+    
+            return response()->json([
+                'message' => $e->getMessage(),
+            ], 500);
+        }
+    }
+    
+    public function reject(
+        Request $request,
+        ProductionReport $productionReport
+    ) {
+    
+        $user = $request->user()->load('employee');
+    
+        $allowedRoles = ['Manager', 'Owner', 'Admin'];
+    
+        if (!in_array($user->employee?->role, $allowedRoles)) {
+            return response()->json([
+                'message' => 'Tidak memiliki akses approval'
+            ], 403);
+        }
+    
+        $validated = $request->validate([
+            'reason' => 'nullable|string|max:255',
+        ]);
+    
+        $productionReport->update([
+            'status' => 'Ditolak',
+            'notes' => $validated['reason']
+                ?? $productionReport->notes,
+        ]);
+    
+        return response()->json([
+            'message' => 'Laporan produksi berhasil ditolak',
+        ]);
     }
 }

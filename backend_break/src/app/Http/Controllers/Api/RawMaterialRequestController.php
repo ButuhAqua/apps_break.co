@@ -10,11 +10,18 @@ use App\Models\RawMaterial;
 
 class RawMaterialRequestController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $requests = RawMaterialRequest::with(['items', 'user'])
-            ->latest()
-            ->get()
+        $user = $request->user()->load('employee');
+
+        $query = RawMaterialRequest::with(['items.rawMaterial', 'user'])
+            ->latest();
+
+        if ($user->employee?->role === 'Unit Produksi') {
+            $query->where('user_id', $user->id);
+        }
+
+        $requests = $query->get()
             ->map(function ($request) {
                 return [
                     'id' => $request->id,
@@ -33,6 +40,7 @@ class RawMaterialRequestController extends Controller
                     'items' => $request->items->map(function ($item) {
                         return [
                             'id' => $item->id,
+                            'raw_material_id' => $item->raw_material_id,
                             'name' => $item->name,
                             'category' => $item->category,
                             'uom' => $item->uom,
@@ -109,5 +117,61 @@ class RawMaterialRequestController extends Controller
         $rawMaterialRequest->load(['items', 'user']);
 
         return response()->json($rawMaterialRequest);
+    }
+
+    public function approve(
+        Request $request,
+        RawMaterialRequest $rawMaterialRequest
+    ) {
+    
+        $user = $request->user()->load('employee');
+    
+        $allowedRoles = ['Manager', 'Owner', 'Admin'];
+    
+        if (!in_array($user->employee?->role, $allowedRoles)) {
+            return response()->json([
+                'message' => 'Tidak memiliki akses approval'
+            ], 403);
+        }
+    
+        $rawMaterialRequest->update([
+            'status' => 'Disetujui',
+        ]);
+    
+        return response()->json([
+            'message' => 'Pengajuan berhasil disetujui',
+            'data' => $rawMaterialRequest,
+        ]);
+    }
+    
+    public function reject(
+        Request $request,
+        RawMaterialRequest $rawMaterialRequest
+    ) {
+    
+        $user = $request->user()->load('employee');
+    
+        $allowedRoles = ['Manager', 'Owner', 'Admin'];
+    
+        if (!in_array($user->employee?->role, $allowedRoles)) {
+            return response()->json([
+                'message' => 'Tidak memiliki akses approval'
+            ], 403);
+        }
+    
+        $validated = $request->validate([
+            'reason' => 'nullable|string|max:255',
+        ]);
+    
+        $rawMaterialRequest->update([
+            'status' => 'Ditolak',
+            'notes' => $validated['reason']
+                ?? $rawMaterialRequest->notes,
+        ]);
+    
+        return response()->json([
+            'message' => 'Pengajuan berhasil ditolak',
+            'data' => $rawMaterialRequest,
+        ]);
     }
 }

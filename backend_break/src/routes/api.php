@@ -9,6 +9,11 @@ use App\Http\Controllers\Api\RawMaterialController;
 use App\Http\Controllers\Api\RawMaterialInventoryController;
 use App\Http\Controllers\Api\ProductionReportController;
 use App\Http\Controllers\Api\ProductController;
+use App\Http\Controllers\Api\ProfileController;
+use App\Http\Controllers\Api\RunnerTripController;
+use App\Http\Controllers\Api\HomeDashboardController;
+use App\Models\ProductStockMovement;
+use App\Models\Inventory;
 
 
 // PUBLIC ROUTE
@@ -36,4 +41,59 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::middleware('auth:sanctum')->get('/production-reports/{productionReport}', [ProductionReportController::class, 'show']);
 
     Route::middleware('auth:sanctum')->get('/products', [ProductController::class, 'index']);
+
+    Route::middleware('auth:sanctum')->get('/me', [ProfileController::class, 'me']);
+
+    Route::middleware('auth:sanctum')->group(function () {
+
+        Route::post(
+            '/runner-trips/departure',
+            [RunnerTripController::class, 'storeDeparture']
+        );
+    
+    });
+    Route::middleware('auth:sanctum')->get('/runner-trips', [RunnerTripController::class, 'index']);
+    Route::middleware('auth:sanctum')->post('/runner-trips/departure', [RunnerTripController::class, 'storeDeparture']);
+    Route::middleware('auth:sanctum')->post('/runner-trips/{runnerTripReport}/return', [RunnerTripController::class, 'storeReturn']);
+
+    Route::middleware('auth:sanctum')->get('/home-dashboard', [HomeDashboardController::class, 'index']);
+
+    Route::post(
+        '/raw-material-requests/{rawMaterialRequest}/approve',
+        [RawMaterialRequestController::class, 'approve']
+    );
+    
+    Route::post(
+        '/raw-material-requests/{rawMaterialRequest}/reject',
+        [RawMaterialRequestController::class, 'reject']
+    );
+    Route::post(
+        '/production-reports/{productionReport}/approve',
+        [ProductionReportController::class, 'approve']
+    );
+    
+    Route::post(
+        '/production-reports/{productionReport}/reject',
+        [ProductionReportController::class, 'reject']
+    );
+
+    Route::post(
+        '/runner-trips/{runnerTripReport}/approve-departure',
+        [RunnerTripController::class, 'approveDeparture']
+    );
+    
+    Route::post(
+        '/runner-trips/{runnerTripReport}/reject-departure',
+        [RunnerTripController::class, 'rejectDeparture']
+    );
+    
+    Route::post(
+        '/runner-trips/{runnerTripReport}/approve-return',
+        [RunnerTripController::class, 'approveReturn']
+    );
+    
+    Route::post(
+        '/runner-trips/{runnerTripReport}/reject-return',
+        [RunnerTripController::class, 'rejectReturn']
+    );
 });

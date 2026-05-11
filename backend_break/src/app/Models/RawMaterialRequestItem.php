@@ -22,4 +22,9 @@ class RawMaterialRequestItem extends Model
     {
         return $this->belongsTo(\App\Models\RawMaterialRequest::class);
     }
+
+    public function rawMaterial()
+    {
+        return $this->belongsTo(RawMaterial::class);
+    }
 }
