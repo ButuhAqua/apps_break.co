@@ -5,6 +5,10 @@ import 'package:http/http.dart' as http;
 class ApprovalRemoteDataSource {
   final String baseUrl = 'http://localhost/api';
 
+  // =========================================================
+  // RAW MATERIAL REQUEST
+  // =========================================================
+
   Future<void> approveRawMaterialRequest({
     required String token,
     required int requestId,
@@ -19,6 +23,39 @@ class ApprovalRemoteDataSource {
 
     if (response.statusCode != 200) {
       throw Exception('Gagal approve pengajuan: ${response.body}');
+    }
+  }
+
+  Future<void> completeRawMaterialRequest({
+    required String token,
+    required int requestId,
+    required String supplier,
+    required String batchNotes,
+    required List<Map<String, dynamic>> items,
+  }) async {
+
+    final response = await http.post(
+      Uri.parse(
+        '$baseUrl/raw-material-requests/$requestId/complete',
+      ),
+
+      headers: {
+        'Accept': 'application/json',
+        'Authorization': 'Bearer $token',
+        'Content-Type': 'application/json',
+      },
+
+      body: jsonEncode({
+        'supplier': supplier,
+        'batch_notes': batchNotes,
+        'items': items,
+      }),
+    );
+
+    if (response.statusCode != 200) {
+      throw Exception(
+        'Gagal menyelesaikan pengajuan: ${response.body}',
+      );
     }
   }
 
@@ -44,6 +81,10 @@ class ApprovalRemoteDataSource {
     }
   }
 
+  // =========================================================
+  // PRODUCTION REPORT
+  // =========================================================
+
   Future<void> approveProductionReport({
     required String token,
     required int reportId,
@@ -58,6 +99,23 @@ class ApprovalRemoteDataSource {
 
     if (response.statusCode != 200) {
       throw Exception('Gagal approve laporan produksi: ${response.body}');
+    }
+  }
+
+  Future<void> completeProductionReport({
+    required String token,
+    required int reportId,
+  }) async {
+    final response = await http.post(
+      Uri.parse('$baseUrl/production-reports/$reportId/complete'),
+      headers: {
+        'Accept': 'application/json',
+        'Authorization': 'Bearer $token',
+      },
+    );
+
+    if (response.statusCode != 200) {
+      throw Exception('Gagal menyelesaikan laporan produksi: ${response.body}');
     }
   }
 
@@ -82,6 +140,10 @@ class ApprovalRemoteDataSource {
       throw Exception('Gagal reject laporan produksi: ${response.body}');
     }
   }
+
+  // =========================================================
+  // RUNNER TRIP
+  // =========================================================
 
   Future<void> approveDepartureTrip({
     required String token,

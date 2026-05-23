@@ -1,7 +1,20 @@
 abstract class ApprovalRepository {
+
+  // =========================================================
+  // RAW MATERIAL REQUEST
+  // =========================================================
+
   Future<void> approveRawMaterialRequest({
     required String token,
     required int requestId,
+  });
+
+  Future<void> completeRawMaterialRequest({
+    required String token,
+    required int requestId,
+    required String supplier,
+    required String batchNotes,
+    required List<Map<String, dynamic>> items,
   });
 
   Future<void> rejectRawMaterialRequest({
@@ -10,7 +23,16 @@ abstract class ApprovalRepository {
     String? reason,
   });
 
+  // =========================================================
+  // PRODUCTION REPORT
+  // =========================================================
+
   Future<void> approveProductionReport({
+    required String token,
+    required int reportId,
+  });
+
+  Future<void> completeProductionReport({
     required String token,
     required int reportId,
   });
@@ -20,6 +42,10 @@ abstract class ApprovalRepository {
     required int reportId,
     String? reason,
   });
+
+  // =========================================================
+  // RUNNER TRIP
+  // =========================================================
 
   Future<void> approveDepartureTrip({
     required String token,

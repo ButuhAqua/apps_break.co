@@ -19,4 +19,11 @@ class Inventory extends Model
     {
         return $this->belongsTo(Product::class);
     }
+
+    public function batches()
+    {
+        return $this->hasMany(
+            ProductInventoryBatch::class
+        );
+    }
 }

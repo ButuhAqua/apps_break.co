@@ -49,7 +49,7 @@ class RawMaterialRequestResource extends Resource
                             ->label('Prioritas')
                             ->options([
                                 'Normal' => 'Normal',
-                                'Urgent' => 'Urgent',
+                                'Mendesak' => 'Mendesak',
                             ])
                             ->default('Normal')
                             ->required(),
@@ -66,7 +66,7 @@ class RawMaterialRequestResource extends Resource
                             ->label('Status')
                             ->options([
                                 'Menunggu' => 'Menunggu',
-                                'Diproses' => 'Diproses',
+                                'Disetujui' => 'Disetujui',
                                 'Selesai' => 'Selesai',
                                 'Ditolak' => 'Ditolak',
                             ])
@@ -144,7 +144,7 @@ class RawMaterialRequestResource extends Resource
                     ->badge()
                     ->color(fn (string $state): string => match ($state) {
                         'Menunggu' => 'warning',
-                        'Diproses' => 'info',
+                        'Disetujui' => 'info',
                         'Selesai' => 'success',
                         'Ditolak' => 'danger',
                         default => 'gray',
@@ -168,7 +168,7 @@ class RawMaterialRequestResource extends Resource
                     ->label('Status')
                     ->options([
                         'Menunggu' => 'Menunggu',
-                        'Diproses' => 'Diproses',
+                        'Disetujui' => 'Disetujui',
                         'Selesai' => 'Selesai',
                         'Ditolak' => 'Ditolak',
                     ]),
@@ -177,7 +177,7 @@ class RawMaterialRequestResource extends Resource
                     ->label('Prioritas')
                     ->options([
                         'Normal' => 'Normal',
-                        'Urgent' => 'Urgent',
+                        'Mendesak' => 'Mendesak',
                     ]),
             ])
             ->actions([
@@ -187,15 +187,15 @@ class RawMaterialRequestResource extends Resource
                 Tables\Actions\EditAction::make()
                     ->label('Edit'),
 
-                Action::make('process')
-                    ->label('Proses')
+                Action::make('approve')
+                    ->label('Setujui')
                     ->icon('heroicon-o-check-circle')
                     ->color('info')
                     ->requiresConfirmation()
                     ->visible(fn ($record) => $record->status === 'Menunggu')
                     ->action(function ($record) {
                         $record->update([
-                            'status' => 'Diproses',
+                            'status' => 'Disetujui',
                         ]);
                     }),
 
@@ -215,7 +215,7 @@ class RawMaterialRequestResource extends Resource
                     ->label('Selesai')
                     ->icon('heroicon-o-check-badge')
                     ->color('success')
-                    ->visible(fn ($record) => $record->status === 'Diproses')
+                    ->visible(fn ($record) => $record->status === 'Disetujui')
                     ->form(fn ($record) => [
                         Forms\Components\TextInput::make('supplier')
                             ->label('Supplier')

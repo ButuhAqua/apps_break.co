@@ -68,8 +68,17 @@ Route::middleware('auth:sanctum')->group(function () {
         [RawMaterialRequestController::class, 'reject']
     );
     Route::post(
+        '/raw-material-requests/{rawMaterialRequest}/complete',
+        [RawMaterialRequestController::class, 'complete']
+    );
+    Route::post(
         '/production-reports/{productionReport}/approve',
         [ProductionReportController::class, 'approve']
+    );
+
+    Route::post(
+        '/production-reports/{productionReport}/complete',
+        [ProductionReportController::class, 'complete']
     );
     
     Route::post(

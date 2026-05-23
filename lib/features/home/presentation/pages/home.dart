@@ -39,6 +39,40 @@ class _HomePageState extends State<HomePage> {
     _loadHome();
   }
 
+  bool get _isFullAccessRole {
+    return _role == 'Manager' ||
+        _role == 'Owner' ||
+        _role == 'Admin' ||
+        _role == 'Super Admin' ||
+        _role == 'super_admin';
+  }
+
+  String _resolveRole(Map<String, dynamic> data, dynamic employee) {
+    final roleFromEmployee = employee?['role'];
+
+    final roles = data['roles'];
+
+    String roleFromSpatie = '';
+
+    if (roles is List && roles.isNotEmpty) {
+      roleFromSpatie = roles.first.toString();
+    }
+
+    if (roleFromEmployee != null && roleFromEmployee.toString().isNotEmpty) {
+      return roleFromEmployee.toString();
+    }
+
+    if (roleFromSpatie == 'super_admin') {
+      return 'Super Admin';
+    }
+
+    if (roleFromSpatie.isNotEmpty) {
+      return roleFromSpatie;
+    }
+
+    return '';
+  }
+
   Future<void> _loadHome() async {
     try {
       final data = await AuthService().me();
@@ -47,11 +81,13 @@ class _HomePageState extends State<HomePage> {
       final dashboard = await AuthService().getHomeDashboard();
       final stats = dashboard['data'];
 
+      final resolvedRole = _resolveRole(data, employee);
+
       if (!mounted) return;
 
       setState(() {
         _name = employee?['full_name'] ?? data['name'] ?? 'User';
-        _role = employee?['role'] ?? '';
+        _role = resolvedRole;
         _assignedLocation = employee?['assigned_location'];
 
         _statPengajuan = stats?['pengajuan'] ?? 0;
@@ -66,6 +102,12 @@ class _HomePageState extends State<HomePage> {
       if (!mounted) return;
 
       setState(() => _isLoading = false);
+
+      final message = e.toString();
+
+      if (message.contains('Token tidak ditemukan')) {
+        return;
+      }
 
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Gagal ambil data home: $e')),
@@ -126,7 +168,7 @@ class _HomePageState extends State<HomePage> {
       ];
     }
 
-    if (_role == 'Manager' || _role == 'Owner' || _role == 'Admin') {
+    if (_isFullAccessRole) {
       return [
         _HomeOption(
           title: 'Approval Pengajuan',

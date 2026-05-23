@@ -92,60 +92,6 @@ class _InventoryBasecampPageState extends State<InventoryBasecampPage> {
     return list;
   }
 
-  void _openActions(ProductInventoryItem item) {
-    showModalBottomSheet(
-      context: context,
-      backgroundColor: Colors.white,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
-      ),
-      builder: (_) {
-        return SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Container(
-                  width: 40,
-                  height: 4,
-                  decoration: BoxDecoration(
-                    color: const Color(0x22000000),
-                    borderRadius: BorderRadius.circular(4),
-                  ),
-                ),
-                const SizedBox(height: 14),
-                Row(
-                  children: [
-                    Expanded(
-                      child: Text(
-                        item.name,
-                        style: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w800,
-                        ),
-                      ),
-                    ),
-                    _statusBadge(_statusOf(item)),
-                  ],
-                ),
-                const SizedBox(height: 16),
-                _sheetBtn(
-                  icon: Icons.swap_horiz_rounded,
-                  label: 'Distribusi ke Gerobak',
-                  onTap: () {
-                    Navigator.pop(context);
-                    _snack('Distribusi "${item.name}" dari Basecamp');
-                  },
-                ),
-              ],
-            ),
-          ),
-        );
-      },
-    );
-  }
-
   void _snack(String m) {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(content: Text(m)),
@@ -241,7 +187,7 @@ class _InventoryBasecampPageState extends State<InventoryBasecampPage> {
                     return _ProductCard(
                       item: item,
                       status: status,
-                      onTap: () => _openActions(item),
+                      onTap: () {},
                     );
                   },
                 );

@@ -18,6 +18,7 @@ use Filament\Tables;
 use Filament\Tables\Actions\Action;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\DB;
 
 class ProductionReportResource extends Resource
@@ -51,8 +52,9 @@ class ProductionReportResource extends Resource
                         ->options([
                             'Draft' => 'Draft',
                             'Submitted' => 'Submitted',
-                            'Approved' => 'Approved',
-                            'Rejected' => 'Rejected',
+                            'Disetujui' => 'Disetujui',
+                            'Selesai' => 'Selesai',
+                            'Ditolak' => 'Ditolak',
                         ])
                         ->default('Submitted')
                         ->required(),
@@ -150,8 +152,9 @@ class ProductionReportResource extends Resource
                     ->color(fn (string $state): string => match ($state) {
                         'Draft' => 'gray',
                         'Submitted' => 'info',
-                        'Approved' => 'success',
-                        'Rejected' => 'danger',
+                        'Disetujui' => 'warning',
+                        'Selesai' => 'success',
+                        'Ditolak' => 'danger',
                         default => 'gray',
                     }),
 
@@ -196,6 +199,173 @@ class ProductionReportResource extends Resource
                         }
                     }),
 
+                Action::make('complete')
+
+                    ->label('Selesaikan')
+                
+                    ->icon('heroicon-o-check-badge')
+                
+                    ->color('success')
+
+                    ->successRedirectUrl(
+                        fn () =>
+                            ProductionReportResource::getUrl('index')
+                    )
+                
+                    ->visible(
+                        fn ($record) =>
+                            $record->status === 'Disetujui'
+                    )
+                
+                    ->form(function ($record): array {
+
+                        $forms = [];
+                    
+                        foreach ($record->finishedProducts as $item) {
+                    
+                            $forms[] =
+                                Forms\Components\DatePicker::make(
+                                    'expired_' . $item->product_id
+                                )
+                    
+                                ->label(
+                                    'Expired ' .
+                                    $item->product?->name
+                                )
+                    
+                                ->required();
+                        }
+                    
+                        return $forms;
+                    })
+                
+                    ->action(function (
+                        $record,
+                        array $data
+                    ) {
+                
+                        try {
+                
+                            DB::transaction(function () use ($record, $data) {
+
+                                foreach (
+                                    $record->finishedProducts
+                                    as $item
+                                ) {
+                            
+                                    $expiredDate =
+                                        $data[
+                                            'expired_' .
+                                            $item->product_id
+                                        ];
+                            
+                                    $inventory =
+                                        Inventory::firstOrCreate(
+                                            [
+                                                'product_id' =>
+                                                    $item->product_id,
+                            
+                                                'location' =>
+                                                    'Gudang Produksi',
+                                            ],
+                                            [
+                                                'stock' => 0,
+                                            ]
+                                        );
+                            
+                                    $inventory->increment(
+                                        'stock',
+                                        $item->qty
+                                    );
+                            
+                                    \App\Models\ProductInventoryBatch::create([
+                            
+                                        'product_id' =>
+                                            $item->product_id,
+                            
+                                        'inventory_id' =>
+                                            $inventory->id,
+                            
+                                        'batch_number' =>
+                                            'PRD-' .
+                                            now()->format('YmdHis') .
+                                            '-' .
+                                            $item->product_id,
+                            
+                                        'production_date' =>
+                                            now(),
+                            
+                                        'expired_date' =>
+                                            $expiredDate,
+                            
+                                        'qty_in' =>
+                                            $item->qty,
+                            
+                                        'qty_remaining' =>
+                                            $item->qty,
+                            
+                                        'uom' =>
+                                            $item->uom,
+                            
+                                        'notes' =>
+                                            'Batch produksi otomatis dari laporan #' .
+                                            $record->id,
+                                    ]);
+                            
+                                    ProductStockMovement::create([
+                            
+                                        'product_id' =>
+                                            $item->product_id,
+                            
+                                        'type' => 'IN',
+                            
+                                        'qty' =>
+                                            $item->qty,
+                            
+                                        'uom' =>
+                                            $item->uom,
+                            
+                                        'to_location' =>
+                                            'Gudang Produksi',
+                            
+                                        'reference_type' =>
+                                            ProductionReport::class,
+                            
+                                        'reference_id' =>
+                                            $record->id,
+                            
+                                        'notes' =>
+                                            'Produk masuk otomatis dari laporan produksi #' .
+                                            $record->id,
+                            
+                                        'user_id' =>
+                                            auth()->id(),
+                                    ]);
+                                }
+                            
+                                $record->update([
+                                    'status' => 'Selesai',
+                                ]);
+                            });
+                
+                        } catch (\Throwable $e) {
+                        
+                            Notification::make()
+                        
+                                ->title(
+                                    'Gagal menyelesaikan laporan'
+                                )
+                        
+                                ->body(
+                                    $e->getMessage()
+                                )
+                        
+                                ->danger()
+                        
+                                ->send();
+                        }
+                    }),
+
                 Action::make('reject')
                     ->label('Reject')
                     ->icon('heroicon-o-x-circle')
@@ -204,7 +374,7 @@ class ProductionReportResource extends Resource
                     ->visible(fn ($record) => $record->status === 'Submitted')
                     ->action(function ($record) {
                         $record->update([
-                            'status' => 'Rejected',
+                            'status' => 'Ditolak',
                         ]);
                     }),
             ])
@@ -219,86 +389,8 @@ class ProductionReportResource extends Resource
                 'finishedProducts.product',
             ]);
 
-            foreach ($record->materialUsages as $usage) {
-                $remainingQtyToTake = $usage->qty;
-
-                $availableStock = RawMaterialInventoryBatch::query()
-                    ->where('raw_material_id', $usage->raw_material_id)
-                    ->where('qty_remaining', '>', 0)
-                    ->sum('qty_remaining');
-
-                if ($availableStock < $usage->qty) {
-                    throw new \Exception(
-                        'Stok bahan "' . ($usage->rawMaterial?->name ?? '-') .
-                        '" tidak cukup. Dibutuhkan ' . $usage->qty . ' ' . $usage->uom .
-                        ', tersedia ' . $availableStock . ' ' . $usage->uom . '.'
-                    );
-                }
-
-                $batches = RawMaterialInventoryBatch::query()
-                    ->where('raw_material_id', $usage->raw_material_id)
-                    ->where('qty_remaining', '>', 0)
-                    ->orderBy('expired_date')
-                    ->orderBy('received_date')
-                    ->lockForUpdate()
-                    ->get();
-
-                foreach ($batches as $batch) {
-                    if ($remainingQtyToTake <= 0) {
-                        break;
-                    }
-
-                    $takenQty = min($remainingQtyToTake, $batch->qty_remaining);
-
-                    $batch->update([
-                        'qty_remaining' => $batch->qty_remaining - $takenQty,
-                    ]);
-
-                    RawMaterialStockMovement::create([
-                        'raw_material_id' => $usage->raw_material_id,
-                        'raw_material_inventory_batch_id' => $batch->id,
-                        'type' => 'OUT',
-                        'qty' => $takenQty,
-                        'uom' => $usage->uom,
-                        'reference_type' => ProductionReport::class,
-                        'reference_id' => $record->id,
-                        'notes' => 'Stock keluar otomatis dari laporan produksi #' . $record->id,
-                        'user_id' => auth()->id(),
-                    ]);
-
-                    $remainingQtyToTake -= $takenQty;
-                }
-            }
-
-            foreach ($record->finishedProducts as $finishedProduct) {
-                $inventory = Inventory::firstOrCreate(
-                    [
-                        'product_id' => $finishedProduct->product_id,
-                        'location' => 'Basecamp',
-                    ],
-                    [
-                        'stock' => 0,
-                    ]
-                );
-            
-                $inventory->increment('stock', $finishedProduct->qty);
-
-                ProductStockMovement::create([
-                    'product_id' => $finishedProduct->product_id,
-                    'type' => 'IN',
-                    'qty' => $finishedProduct->qty,
-                    'uom' => $finishedProduct->uom,
-                    'from_location' => null,
-                    'to_location' => 'Basecamp',
-                    'reference_type' => ProductionReport::class,
-                    'reference_id' => $record->id,
-                    'notes' => 'Produk masuk otomatis dari laporan produksi #' . $record->id,
-                    'user_id' => auth()->id(),
-                ]);
-            }
-
             $record->update([
-                'status' => 'Approved',
+                'status' => 'Disetujui',
             ]);
         });
     }

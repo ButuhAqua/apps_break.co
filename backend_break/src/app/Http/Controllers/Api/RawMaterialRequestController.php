@@ -3,10 +3,12 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Models\RawMaterial;
 use App\Models\RawMaterialRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use App\Models\RawMaterial;
+use App\Models\RawMaterialInventoryBatch;
+use App\Models\RawMaterialStockMovement;
 
 class RawMaterialRequestController extends Controller
 {
@@ -83,7 +85,7 @@ class RawMaterialRequestController extends Controller
 
             foreach ($validated['items'] as $item) {
                 $rawMaterial = RawMaterial::findOrFail($item['raw_material_id']);
-            
+
                 $rawMaterialRequest->items()->create([
                     'raw_material_id' => $rawMaterial->id,
                     'name' => $rawMaterial->name,
@@ -119,59 +121,253 @@ class RawMaterialRequestController extends Controller
         return response()->json($rawMaterialRequest);
     }
 
-    public function approve(
-        Request $request,
-        RawMaterialRequest $rawMaterialRequest
-    ) {
-    
+    public function approve(Request $request, RawMaterialRequest $rawMaterialRequest)
+    {
         $user = $request->user()->load('employee');
-    
-        $allowedRoles = ['Manager', 'Owner', 'Admin'];
-    
-        if (!in_array($user->employee?->role, $allowedRoles)) {
+
+        if (!$this->canApprove($user)) {
             return response()->json([
-                'message' => 'Tidak memiliki akses approval'
+                'message' => 'Tidak memiliki akses approval',
             ], 403);
         }
-    
+
+        if ($rawMaterialRequest->status !== 'Menunggu') {
+            return response()->json([
+                'message' => 'Pengajuan ini sudah diproses sebelumnya',
+            ], 422);
+        }
+
         $rawMaterialRequest->update([
             'status' => 'Disetujui',
         ]);
-    
+
         return response()->json([
             'message' => 'Pengajuan berhasil disetujui',
-            'data' => $rawMaterialRequest,
+            'data' => $rawMaterialRequest->fresh(['items.rawMaterial', 'user']),
         ]);
     }
-    
-    public function reject(
+
+    public function complete(
         Request $request,
         RawMaterialRequest $rawMaterialRequest
     ) {
     
         $user = $request->user()->load('employee');
     
-        $allowedRoles = ['Manager', 'Owner', 'Admin'];
+        if (!$this->canApprove($user)) {
     
-        if (!in_array($user->employee?->role, $allowedRoles)) {
             return response()->json([
-                'message' => 'Tidak memiliki akses approval'
+                'message' =>
+                    'Tidak memiliki akses menyelesaikan pengajuan',
             ], 403);
         }
     
+        if ($rawMaterialRequest->status !== 'Disetujui') {
+    
+            return response()->json([
+                'message' =>
+                    'Pengajuan hanya bisa diselesaikan setelah disetujui',
+            ], 422);
+        }
+    
         $validated = $request->validate([
-            'reason' => 'nullable|string|max:255',
+    
+            'supplier' => [
+                'nullable',
+                'string',
+                'max:255',
+            ],
+    
+            'batch_notes' => [
+                'nullable',
+                'string',
+            ],
+    
+            'items' => [
+                'required',
+                'array',
+                'min:1',
+            ],
+    
+            'items.*.raw_material_id' => [
+                'required',
+                'exists:raw_materials,id',
+            ],
+    
+            'items.*.expired_date' => [
+                'required',
+                'date',
+            ],
         ]);
     
+        DB::beginTransaction();
+    
+        try {
+    
+            $rawMaterialRequest->load([
+                'items.rawMaterial',
+                'user',
+            ]);
+    
+            foreach (
+                $rawMaterialRequest->items
+                as $requestItem
+            ) {
+    
+                $payloadItem = collect(
+                    $validated['items']
+                )->firstWhere(
+                    'raw_material_id',
+                    $requestItem->raw_material_id
+                );
+    
+                if (!$payloadItem) {
+                    continue;
+                }
+    
+                $batchNumber =
+                    'RM-' .
+                    now()->format('YmdHis') .
+                    '-' .
+                    $requestItem->raw_material_id;
+    
+                $batch =
+                    RawMaterialInventoryBatch::create([
+    
+                        'raw_material_id' =>
+                            $requestItem->raw_material_id,
+    
+                        'batch_number' =>
+                            $batchNumber,
+    
+                        'received_date' =>
+                            now(),
+    
+                        'expired_date' =>
+                            $payloadItem['expired_date'],
+    
+                        'qty_in' =>
+                            $requestItem->qty,
+    
+                        'qty_remaining' =>
+                            $requestItem->qty,
+    
+                        'uom' =>
+                            $requestItem->uom,
+    
+                        'supplier' =>
+                            $validated['supplier']
+                            ?? null,
+    
+                        'notes' =>
+                            $validated['batch_notes']
+                            ?? null,
+                    ]);
+    
+                RawMaterialStockMovement::create([
+    
+                    'raw_material_id' =>
+                        $requestItem->raw_material_id,
+    
+                    'raw_material_inventory_batch_id' =>
+                        $batch->id,
+    
+                    'type' => 'IN',
+    
+                    'qty' =>
+                        $requestItem->qty,
+    
+                    'uom' =>
+                        $requestItem->uom,
+    
+                    'reference_type' =>
+                        RawMaterialRequest::class,
+    
+                    'reference_id' =>
+                        $rawMaterialRequest->id,
+    
+                    'notes' =>
+                        'Stock masuk dari pengajuan bahan baku #' .
+                        $rawMaterialRequest->id,
+    
+                    'user_id' =>
+                        $user->id,
+                ]);
+            }
+    
+            $rawMaterialRequest->update([
+                'status' => 'Selesai',
+            ]);
+    
+            DB::commit();
+    
+            return response()->json([
+                'message' =>
+                    'Pengajuan berhasil diselesaikan',
+    
+                'data' =>
+                    $rawMaterialRequest->fresh([
+                        'items.rawMaterial',
+                        'user',
+                    ]),
+            ]);
+    
+        } catch (\Throwable $e) {
+    
+            DB::rollBack();
+    
+            return response()->json([
+                'message' => $e->getMessage(),
+            ], 500);
+        }
+    }
+
+    public function reject(Request $request, RawMaterialRequest $rawMaterialRequest)
+    {
+        $user = $request->user()->load('employee');
+
+        if (!$this->canApprove($user)) {
+            return response()->json([
+                'message' => 'Tidak memiliki akses approval',
+            ], 403);
+        }
+
+        if ($rawMaterialRequest->status !== 'Menunggu') {
+            return response()->json([
+                'message' => 'Pengajuan ini sudah diproses sebelumnya',
+            ], 422);
+        }
+
+        $validated = $request->validate([
+            'reason' => ['nullable', 'string', 'max:255'],
+        ]);
+
         $rawMaterialRequest->update([
             'status' => 'Ditolak',
-            'notes' => $validated['reason']
-                ?? $rawMaterialRequest->notes,
+            'notes' => $validated['reason'] ?? $rawMaterialRequest->notes,
         ]);
-    
+
         return response()->json([
             'message' => 'Pengajuan berhasil ditolak',
-            'data' => $rawMaterialRequest,
+            'data' => $rawMaterialRequest->fresh(['items.rawMaterial', 'user']),
         ]);
+    }
+
+    private function canApprove($user): bool
+    {
+        $employeeRole = $user->employee?->role;
+
+        if (in_array($employeeRole, ['Manager', 'Owner', 'Admin', 'Super Admin'])) {
+            return true;
+        }
+
+        if (method_exists($user, 'hasRole')) {
+            return $user->hasRole('super_admin')
+                || $user->hasRole('admin')
+                || $user->hasRole('manager')
+                || $user->hasRole('owner');
+        }
+
+        return false;
     }
 }

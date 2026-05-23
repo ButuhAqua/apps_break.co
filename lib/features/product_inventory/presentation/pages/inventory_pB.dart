@@ -96,78 +96,6 @@ class _InventoryGerobakBPageState extends State<InventoryGerobakBPage> {
     return list;
   }
 
-  void _openActions(ProductInventoryItem item) {
-    showModalBottomSheet(
-      context: context,
-      backgroundColor: Colors.white,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
-      ),
-      builder: (_) {
-        return SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Container(
-                  width: 40,
-                  height: 4,
-                  decoration: BoxDecoration(
-                    color: const Color(0x22000000),
-                    borderRadius: BorderRadius.circular(4),
-                  ),
-                ),
-                const SizedBox(height: 14),
-                Row(
-                  children: [
-                    Expanded(
-                      child: Text(
-                        item.name,
-                        style: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w800,
-                        ),
-                      ),
-                    ),
-                    _statusBadge(_statusOf(item)),
-                  ],
-                ),
-                const SizedBox(height: 16),
-                _sheetBtn(
-                  icon: Icons.add_rounded,
-                  label: 'Tambah Stok',
-                  onTap: () {
-                    Navigator.pop(context);
-                    _snack('Tambah stok "${item.name}" (demo)');
-                  },
-                ),
-                const SizedBox(height: 8),
-                _sheetBtn(
-                  icon: Icons.remove_rounded,
-                  label: 'Kurangi Stok',
-                  onTap: () {
-                    Navigator.pop(context);
-                    _snack('Kurangi stok "${item.name}" (demo)');
-                  },
-                ),
-                const SizedBox(height: 8),
-                _sheetBtn(
-                  icon: Icons.swap_horiz_rounded,
-                  label: 'Mutasi ke Gerobak',
-                  onTap: () {
-                    Navigator.pop(context);
-                    _snack('Mutasi "${item.name}" ke gerobak (demo)');
-                  },
-                ),
-              ],
-            ),
-          ),
-        );
-      },
-    );
-  }
-
   void _snack(String m) {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(content: Text(m)),
@@ -285,7 +213,7 @@ class _InventoryGerobakBPageState extends State<InventoryGerobakBPage> {
                     return _ProductCard(
                       item: item,
                       status: status,
-                      onTap: () => _openActions(item),
+                      onTap: () {},
                     );
                   },
                 );

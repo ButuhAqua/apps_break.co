@@ -6,6 +6,10 @@ class ApprovalRepositoryImpl implements ApprovalRepository {
 
   ApprovalRepositoryImpl(this.remoteDataSource);
 
+  // =========================================================
+  // RAW MATERIAL REQUEST
+  // =========================================================
+
   @override
   Future<void> approveRawMaterialRequest({
     required String token,
@@ -14,6 +18,25 @@ class ApprovalRepositoryImpl implements ApprovalRepository {
     return remoteDataSource.approveRawMaterialRequest(
       token: token,
       requestId: requestId,
+    );
+  }
+
+  @override
+  Future<void> completeRawMaterialRequest({
+    required String token,
+    required int requestId,
+    required String supplier,
+    required String batchNotes,
+    required List<Map<String, dynamic>> items,
+  }) {
+
+    return remoteDataSource
+        .completeRawMaterialRequest(
+      token: token,
+      requestId: requestId,
+      supplier: supplier,
+      batchNotes: batchNotes,
+      items: items,
     );
   }
 
@@ -30,12 +53,27 @@ class ApprovalRepositoryImpl implements ApprovalRepository {
     );
   }
 
+  // =========================================================
+  // PRODUCTION REPORT
+  // =========================================================
+
   @override
   Future<void> approveProductionReport({
     required String token,
     required int reportId,
   }) {
     return remoteDataSource.approveProductionReport(
+      token: token,
+      reportId: reportId,
+    );
+  }
+
+  @override
+  Future<void> completeProductionReport({
+    required String token,
+    required int reportId,
+  }) {
+    return remoteDataSource.completeProductionReport(
       token: token,
       reportId: reportId,
     );
@@ -53,6 +91,10 @@ class ApprovalRepositoryImpl implements ApprovalRepository {
       reason: reason,
     );
   }
+
+  // =========================================================
+  // RUNNER TRIP
+  // =========================================================
 
   @override
   Future<void> approveDepartureTrip({
