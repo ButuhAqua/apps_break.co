@@ -16,10 +16,11 @@ class RunnerTripReportResource extends Resource
     protected static ?string $model = RunnerTripReport::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-truck';
-    protected static ?string $navigationGroup = 'Operasional Runner';
+    protected static ?string $navigationGroup ='Operasional Runner';
     protected static ?string $navigationLabel = 'Laporan Trip Runner';
     protected static ?string $modelLabel = 'Laporan Trip Runner';
     protected static ?string $pluralModelLabel = 'Laporan Trip Runner';
+    protected static ?int $navigationSort = 11;
 
     public static function form(Form $form): Form
     {

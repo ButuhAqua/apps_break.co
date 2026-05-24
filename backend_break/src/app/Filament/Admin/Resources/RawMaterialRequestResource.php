@@ -27,7 +27,9 @@ class RawMaterialRequestResource extends Resource
 
     protected static ?string $pluralModelLabel = 'Pengajuan Bahan Baku';
 
-    protected static ?string $navigationGroup = 'Pengajuan';
+    protected static ?string $navigationGroup ='Pengajuan Bahan Baku';
+
+    protected static ?int $navigationSort = 10;
 
     public static function form(Form $form): Form
     {

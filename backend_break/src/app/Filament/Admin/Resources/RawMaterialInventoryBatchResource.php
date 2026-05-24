@@ -18,13 +18,15 @@ class RawMaterialInventoryBatchResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-archive-box';
 
-    protected static ?string $navigationGroup = 'Inventory';
+    protected static ?string $navigationGroup ='Inventory Bahan Baku';
 
     protected static ?string $navigationLabel = 'Batch Bahan Baku';
 
     protected static ?string $modelLabel = 'Batch Bahan Baku';
 
     protected static ?string $pluralModelLabel = 'Batch Bahan Baku';
+
+    protected static ?int $navigationSort = 7;
 
     public static function form(Form $form): Form
     {

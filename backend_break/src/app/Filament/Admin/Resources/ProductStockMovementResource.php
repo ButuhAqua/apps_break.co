@@ -14,10 +14,11 @@ class ProductStockMovementResource extends Resource
     protected static ?string $model = ProductStockMovement::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-arrow-path';
-    protected static ?string $navigationGroup = 'Inventory';
+    protected static ?string $navigationGroup ='Inventory Produk';
     protected static ?string $navigationLabel = 'Mutasi Stok Produk';
     protected static ?string $modelLabel = 'Mutasi Stok Produk';
     protected static ?string $pluralModelLabel = 'Mutasi Stok Produk';
+    protected static ?int $navigationSort = 4;
 
     public static function table(Table $table): Table
     {

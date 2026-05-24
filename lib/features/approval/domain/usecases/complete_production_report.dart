@@ -14,7 +14,7 @@ class CompleteProductionReport {
 
     required int reportId,
 
-    required List items,
+    required List<Map<String, dynamic>> items,
 
   }) {
 

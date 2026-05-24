@@ -26,10 +26,11 @@ class ProductionReportResource extends Resource
     protected static ?string $model = ProductionReport::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-beaker';
-    protected static ?string $navigationGroup = 'Produksi';
+    protected static ?string $navigationGroup ='Laporan Produksi';
     protected static ?string $navigationLabel = 'Laporan Produksi';
     protected static ?string $modelLabel = 'Laporan Produksi';
     protected static ?string $pluralModelLabel = 'Laporan Produksi';
+    protected static ?int $navigationSort = 9;
 
     public static function form(Form $form): Form
     {

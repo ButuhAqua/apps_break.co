@@ -35,6 +35,7 @@ abstract class ApprovalRepository {
   Future<void> completeProductionReport({
     required String token,
     required int reportId,
+    required List<Map<String, dynamic>> items,
   });
 
   Future<void> rejectProductionReport({

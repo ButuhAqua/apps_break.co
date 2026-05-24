@@ -15,13 +15,15 @@ class RawMaterialInventoryResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-chart-bar-square';
 
-    protected static ?string $navigationGroup = 'Inventory';
+    protected static ?string $navigationGroup ='Inventory Bahan Baku';
 
     protected static ?string $navigationLabel = 'Inventory Bahan Baku';
 
     protected static ?string $modelLabel = 'Inventory Bahan Baku';
 
     protected static ?string $pluralModelLabel = 'Inventory Bahan Baku';
+
+    protected static ?int $navigationSort = 6;
 
     public static function table(Table $table): Table
     {

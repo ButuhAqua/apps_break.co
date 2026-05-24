@@ -624,7 +624,7 @@ class _ApprovalPageState extends State<ApprovalPage> {
   ) async {
 
     final expiredDates =
-        <String, DateTime>{};
+        <int, DateTime>{};
 
     return await showDialog<
         Map<String, dynamic>?>(

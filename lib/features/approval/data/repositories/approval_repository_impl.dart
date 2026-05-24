@@ -72,10 +72,13 @@ class ApprovalRepositoryImpl implements ApprovalRepository {
   Future<void> completeProductionReport({
     required String token,
     required int reportId,
+    required List<Map<String, dynamic>> items,
   }) {
+
     return remoteDataSource.completeProductionReport(
       token: token,
       reportId: reportId,
+      items: items,
     );
   }
 

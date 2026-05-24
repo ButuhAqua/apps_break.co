@@ -17,14 +17,11 @@ class RawMaterialResource extends Resource
     protected static ?string $model = RawMaterial::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-cube';
-
-    protected static ?string $navigationGroup = 'Inventory';
-
+    protected static ?string $navigationGroup ='Inventory Bahan Baku';
     protected static ?string $navigationLabel = 'Raw Materials';
-
     protected static ?string $modelLabel = 'Raw Material';
-
     protected static ?string $pluralModelLabel = 'Raw Materials';
+    protected static ?int $navigationSort = 5;
 
     public static function form(Form $form): Form
     {

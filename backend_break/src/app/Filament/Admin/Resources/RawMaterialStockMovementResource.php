@@ -14,10 +14,11 @@ class RawMaterialStockMovementResource extends Resource
     protected static ?string $model = RawMaterialStockMovement::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-arrow-path';
-    protected static ?string $navigationGroup = 'Inventory';
+    protected static ?string $navigationGroup ='Inventory Bahan Baku';
     protected static ?string $navigationLabel = 'Mutasi Stok Bahan';
     protected static ?string $modelLabel = 'Mutasi Stok Bahan';
     protected static ?string $pluralModelLabel = 'Mutasi Stok Bahan';
+    protected static ?int $navigationSort = 8;
 
     public static function table(Table $table): Table
     {

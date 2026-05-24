@@ -105,17 +105,29 @@ class ApprovalRemoteDataSource {
   Future<void> completeProductionReport({
     required String token,
     required int reportId,
+    required List<Map<String, dynamic>> items,
   }) async {
+
     final response = await http.post(
-      Uri.parse('$baseUrl/production-reports/$reportId/complete'),
+      Uri.parse(
+        '$baseUrl/production-reports/$reportId/complete',
+      ),
+
       headers: {
         'Accept': 'application/json',
         'Authorization': 'Bearer $token',
+        'Content-Type': 'application/json',
       },
+
+      body: jsonEncode({
+        'items': items,
+      }),
     );
 
     if (response.statusCode != 200) {
-      throw Exception('Gagal menyelesaikan laporan produksi: ${response.body}');
+      throw Exception(
+        'Gagal menyelesaikan laporan produksi: ${response.body}',
+      );
     }
   }
 
