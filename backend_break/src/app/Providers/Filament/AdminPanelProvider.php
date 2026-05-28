@@ -45,6 +45,9 @@ class AdminPanelProvider extends PanelProvider
             ->discoverWidgets(in: app_path('Filament/Admin/Widgets'), for: 'App\\Filament\\Admin\\Widgets')
             ->widgets([
                 \Awcodes\Overlook\Widgets\OverlookWidget::class,
+                \App\Filament\Admin\Widgets\TopSellingProductsChart::class,
+                \App\Filament\Admin\Widgets\MostUsedRawMaterialsChart::class,
+                \App\Filament\Admin\Widgets\SlowMovingProducts::class,
             ])
             ->plugins([
                 \Jeffgreco13\FilamentBreezy\BreezyCore::make()
